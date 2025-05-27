@@ -1379,42 +1379,624 @@ O=N-O<sup>–</sup>
 
     <!-- Equilibrium & Kinetics -->
     <div class="chapter" id="equilibrium">
-      <h2>Equilibrium & Kinetics</h2>
-      <button class="collapsible">Concepts & Examples</button>
-      <div class="chapter-content">
+  <h2>Chemical Equilibrium & Kinetics</h2>
+
+  <button class="collapsible">Quick Overview</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Chemical Kinetics:</b> Study of the rates (speed) of chemical reactions.</li>
+      <li><b>Chemical Equilibrium:</b> State where forward and reverse reactions occur at the same rate—concentrations stay constant (but not necessarily equal!).</li>
+      <li>Most reactions are reversible to some extent; equilibrium is dynamic, not static.</li>
+      <li>Understanding both is essential for predicting yields, optimizing conditions, and controlling reactions in real life and industry.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Concept Map & Visual Guide</button>
+  <div class="chapter-content">
+    <pre style="background:#e0e7ef; padding:10px; border-radius:7px;">
+  Reaction Progress
+   |
+   +-----> Kinetics: How fast does it go?
+   |
+   +-----> Equilibrium: What do you end up with?
+              |
+    <-------------------------------------------->
+    [Reactants] ⇌ [Products]
+        ^             |
+        |             v
+      Forward     Reverse
+      Rate        Rate
+    </pre>
+    <ul>
+      <li><b>At equilibrium:</b> Rate<sub>fwd</sub> = Rate<sub>rev</sub> (but not [Reactant] = [Product]!)</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Glossary: Essential Terms</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Rate:</b> Change in concentration per unit time</li>
+      <li><b>Collision Theory:</b> Particles must collide with correct orientation & energy</li>
+      <li><b>Activation Energy (Ea):</b> Minimum energy needed to start a reaction</li>
+      <li><b>Transition State / Activated Complex:</b> High-energy, unstable arrangement during a reaction</li>
+      <li><b>Catalyst:</b> Substance that lowers activation energy; increases rate; not consumed</li>
+      <li><b>Equilibrium:</b> State where forward and reverse reactions are equal in rate</li>
+      <li><b>Equilibrium Constant (K, K<sub>eq</sub>):</b> Ratio of [products] to [reactants] at equilibrium</li>
+      <li><b>Le Chatelier's Principle:</b> System at equilibrium shifts to relieve stress (change in concentration, pressure, temperature, volume)</li>
+      <li><b>K<sub>sp</sub>:</b> Solubility product constant (for sparingly soluble salts)</li>
+      <li><b>K<sub>p</sub>:</b> Equilibrium constant using partial pressures</li>
+      <li><b>Q (Reaction Quotient):</b> Same form as K, but for non-equilibrium conditions</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Chemical Kinetics: Reaction Rates & Mechanisms</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Reaction Rate:</b> Δ[Product]/Δt or –Δ[Reactant]/Δt</li>
+      <li><b>Factors Affecting Rate:</b>
         <ul>
-          <li><b>Chemical Kinetics:</b> speed of reaction (rate)</li>
-          <li><b>Collision Theory:</b> particles must collide with right orientation and energy</li>
-          <li><b>Activation Energy (Ea):</b> energy barrier</li>
-          <li><b>Catalysts:</b> lower Ea, speed up reaction (not consumed)</li>
-          <li><b>Equilibrium:</b> rates forward = reverse, concentrations constant</li>
-          <li><b>Keq = [products]/[reactants]:</b> ignore pure solids/liquids</li>
-          <li><b>Ksp:</b> solubility product, higher Ksp = more soluble</li>
-          <li><b>Le Chatelier’s Principle:</b> system responds to minimize stress (concentration, T, P)</li>
+          <li>Nature of reactants (ions react faster than covalents)</li>
+          <li>Concentration: ↑conc = ↑rate</li>
+          <li>Temperature: ↑T = ↑rate (more particles have E > Ea)</li>
+          <li>Surface area: ↑area = ↑rate (esp. for solids)</li>
+          <li>Catalysts: Lower Ea = ↑rate</li>
         </ul>
-        <details><summary>Example: What happens to equilibrium if [H₂] increases in N₂ + 3H₂ ⇌ 2NH₃?</summary>
-          <div>Shifts right (more NH₃).</div>
-        </details>
+      </li>
+      <li><b>Collision Theory:</b> Particles must collide with enough energy & correct alignment for reaction to occur (effective collision)</li>
+      <li><b>Rate Law (Intro):</b> For A + B → C, Rate = k[A]^m[B]^n</li>
+      <li><b>Order of Reaction:</b> m, n (found experimentally)</li>
+      <li><b>Overall order:</b> m+n</li>
+    </ul>
+    <details><summary>Example: How does a catalyst work?</summary>
+      <div>It provides an alternate, lower-energy pathway for reaction (see PE diagram below).</div>
+    </details>
+    <details><summary>Potential Energy Diagram</summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+   Energy
+     ^
+     |          ____
+     |         /    \
+     |  _____/        \______
+     +------------------------> Reaction Progress
+             |____|  |____|
+             Ea     Ea with catalyst
+        </pre>
       </div>
-    </div>
+    </details>
+    <details><summary>Q: If you increase temperature, what happens to reaction rate?</summary>
+      <div>Rate increases because more particles have enough energy to overcome Ea.</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Reaction Mechanisms & Rate-Determining Step</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Mechanism:</b> Series of elementary steps making up overall reaction</li>
+      <li><b>Intermediate:</b> Species produced in one step, consumed in another (doesn’t appear in net equation)</li>
+      <li><b>Rate-Determining Step:</b> Slowest step in mechanism—controls overall rate</li>
+      <li>Fast steps can't proceed faster than the slowest one (like a traffic jam)</li>
+    </ul>
+    <details><summary>Example: Multi-step mechanism</summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+Step 1 (slow):  NO₂ + CO → NO + CO₂
+Step 2 (fast):  NO + O₂ → NO₂ + O₂
+Overall:       NO₂ + CO + O₂ → NO₂ + CO₂ + O₂
+(After canceling intermediates: NO)
+        </pre>
+      </div>
+    </details>
+    <details><summary>Q: How do you find the rate law from a mechanism?</summary>
+      <div>The rate law is based on the reactants of the slow (rate-determining) step.</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Chemical Equilibrium: The Basics</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Dynamic Equilibrium:</b> Both forward & reverse reactions occur, but concentrations stay constant (not equal!)</li>
+      <li><b>Reversible Reaction:</b> A ⇌ B</li>
+      <li><b>Law of Mass Action (Equilibrium Law):</b>
+        <ul>
+          <li>For: aA + bB ⇌ cC + dD</li>
+          <li>K<sub>eq</sub> = ([C]^c × [D]^d) / ([A]^a × [B]^b)</li>
+          <li>No solids or liquids included in K</li>
+        </ul>
+      </li>
+      <li><b>Magnitude of K:</b>
+        <ul>
+          <li>K >> 1: Products favored (mostly product at eq.)</li>
+          <li>K << 1: Reactants favored</li>
+          <li>K ≈ 1: Significant amounts of both</li>
+        </ul>
+      </li>
+    </ul>
+    <details><summary>Practice: Write K for 2NO(g) + O₂(g) ⇌ 2NO₂(g)</summary>
+      <div>K = [NO₂]² / ([NO]²[O₂])</div>
+    </details>
+    <details><summary>Q: What happens if K = 0.01?</summary>
+      <div>Reaction favors reactants at equilibrium.</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Solubility Product Constant (Ksp)</button>
+  <div class="chapter-content">
+    <ul>
+      <li>K<sub>sp</sub>: For dissolving sparingly soluble salts in water.</li>
+      <li>e.g., PbCl₂(s) ⇌ Pb²⁺(aq) + 2Cl⁻(aq)</li>
+      <li>K<sub>sp</sub> = [Pb²⁺][Cl⁻]² (omit solids!)</li>
+      <li>High Ksp = more soluble; low Ksp = less soluble.</li>
+    </ul>
+    <details><summary>Example: Calculate Ksp if [Ag⁺]=1.3×10⁻⁵, [Cl⁻]=1.3×10⁻⁵</summary>
+      <div>Ksp = (1.3×10⁻⁵)² = 1.7×10⁻¹⁰</div>
+    </details>
+    <details><summary>Q: What is the effect of a common ion on solubility?</summary>
+      <div>It reduces solubility ("common ion effect").</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Le Chatelier’s Principle</button>
+  <div class="chapter-content">
+    <ul>
+      <li>If a system at equilibrium is stressed (change in [ ], P, V, or T), the system shifts to minimize the stress.</li>
+      <li><b>Increase [reactant]:</b> Shifts right (to product)</li>
+      <li><b>Increase [product]:</b> Shifts left (to reactant)</li>
+      <li><b>Decrease volume (gases):</b> Shifts to side with fewer moles of gas</li>
+      <li><b>Change temperature:</b>
+        <ul>
+          <li>Exothermic: ↑T shifts left, ↓T shifts right</li>
+          <li>Endothermic: ↑T shifts right, ↓T shifts left</li>
+        </ul>
+      </li>
+      <li><b>Add catalyst:</b> No shift—only equilibrium reached faster.</li>
+    </ul>
+    <details><summary>Example: What happens if you remove NH₃ from N₂ + 3H₂ ⇌ 2NH₃?</summary>
+      <div>Shifts right to produce more NH₃.</div>
+    </details>
+    <details><summary>Q: If you decrease volume in 2SO₂ + O₂ ⇌ 2SO₃, which way does it shift?</summary>
+      <div>Right (fewer moles gas on product side: 2 vs 3)</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Reaction Quotient (Q) vs. K</button>
+  <div class="chapter-content">
+    <ul>
+      <li>Q: Plug current concentrations into K expression (even if not at equilibrium).</li>
+      <li>If Q < K: Reaction goes forward (more products form)</li>
+      <li>If Q > K: Reaction goes backward (more reactants form)</li>
+      <li>If Q = K: System is at equilibrium</li>
+    </ul>
+    <details><summary>Practice: For H₂ + I₂ ⇌ 2HI, K=100, current [HI]=5, [H₂]=[I₂]=1. Q=? Shift?</summary>
+      <div>Q = [HI]²/([H₂][I₂]) = 25/1 = 25. Q < K → shifts right.</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Advanced: Equilibrium & Kinetics Extensions (AP/Honors)</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Rate Law (Integrated):</b> 
+        <ul>
+          <li>First order: ln[A] = –kt + ln[A]<sub>0</sub></li>
+          <li>Half-life (first order): t<sub>½</sub> = 0.693/k</li>
+        </ul>
+      </li>
+      <li><b>Arrhenius Equation:</b> k = Ae<sup>–Ea/RT</sup></li>
+      <li><b>Haber Process:</b> Industrial NH₃ synthesis, equilibrium under high pressure/medium temp, iron catalyst</li>
+      <li><b>Hess’s Law:</b> Add ΔH of steps to get overall reaction ΔH (useful in mechanisms)</li>
+      <li><b>K<sub>p</sub> for gases:</b> Use partial pressures instead of concentrations; K<sub>p</sub> = K<sub>c</sub>(RT)<sup>Δn</sup></li>
+      <li><b>Link between kinetics and equilibrium:</b> Fast forward and slow reverse means large K (more products); both fast, K ≈ 1.</li>
+    </ul>
+    <details><summary>Challenge: Write rate law for mechanism with slow step 2A → B, fast step B → C</summary>
+      <div>Rate = k[A]² (based on slow step's reactants)</div>
+    </details>
+    <details><summary>Advanced: Calculate t<sub>½</sub> for first-order decay (k = 0.010 s⁻¹)</summary>
+      <div>t<sub>½</sub> = 0.693/0.010 = 69.3 s</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Practice Problems (With Hints & Answers)</button>
+  <div class="chapter-content">
+    <ol>
+      <li>
+        For 2SO₂ + O₂ ⇌ 2SO₃, K = 10. If [SO₂]=0.2, [O₂]=0.1, [SO₃]=0.4, is the system at equilibrium?
+        <details><summary>Hint</summary><div>Plug into K expression: [SO₃]²/([SO₂]²[O₂])</div></details>
+        <details><summary>Solution</summary><div>K = 0.16/(0.04×0.1)=0.16/0.004=40; Q=40, Q>K, system shifts left.</div></details>
+      </li>
+      <li>
+        The decomposition of N₂O₄(g) to NO₂(g) has k = 0.005 s⁻¹ at 60°C. What is the half-life?
+        <details><summary>Solution</summary><div>t½ = 0.693/0.005 = 138.6 s</div></details>
+      </li>
+      <li>
+        Write K<sub>sp</sub> for BaSO₄(s) ⇌ Ba²⁺(aq) + SO₄²⁻(aq).
+        <details><summary>Solution</summary><div>Ksp = [Ba²⁺][SO₄²⁻]</div></details>
+      </li>
+      <li>
+        A system is at equilibrium. If more reactant is added, what happens?
+        <details><summary>Solution</summary><div>Shifts right (to products)</div></details>
+      </li>
+      <li>
+        What effect does increasing temperature have on an exothermic equilibrium?
+        <details><summary>Solution</summary><div>Shifts left (towards reactants)</div></details>
+      </li>
+    </ol>
+  </div>
+
+  <button class="collapsible">Mega Worked Example</button>
+  <div class="chapter-content">
+    <ol>
+      <li>
+        <b>The Haber Process:</b> N₂(g) + 3H₂(g) ⇌ 2NH₃(g), K = 0.50 at 400°C.
+        <ol>
+          <li>If [N₂]=0.20 M, [H₂]=0.30 M, [NH₃]=0.10 M, is the system at equilibrium? If not, which way does it shift?</li>
+          <details><summary>Solution</summary>
+            <div>
+              K = [NH₃]² / ([N₂][H₂]³) = 0.01 / (0.20 × 0.027) = 0.01 / 0.0054 ≈ 1.85<br>
+              Q > K, so it shifts left (towards reactants).
+            </div>
+          </details>
+          <li>Suppose at equilibrium [NH₃]=x, express other concentrations in terms of x (ICE table style).</li>
+          <details><summary>Solution</summary>
+            <div>
+              <pre>
+Initial: [N₂]=0.20  [H₂]=0.30  [NH₃]=0.10
+Change:   –y         –3y         +2y
+Eq.:   0.20–y     0.30–3y     0.10+2y
+              </pre>
+              <b>Set up K:</b> K = ([0.10+2y]²)/([0.20–y][0.30–3y]³)
+            </div>
+          </details>
+        </ol>
+      </li>
+    </ol>
+  </div>
+
+  <button class="collapsible">Common Misconceptions & Tips</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Misconception:</b> At equilibrium, reactant = product. <br>
+        <b>Correction:</b> Concentrations are constant, not necessarily equal!</li>
+      <li><b>Misconception:</b> Catalysts change equilibrium position. <br>
+        <b>Correction:</b> Only speed up reaching equilibrium; no change in K.</li>
+      <li><b>Tip:</b> Only gases and aqueous species go in K or Ksp expressions; ignore solids and liquids.</li>
+      <li><b>Tip:</b> A big K means products dominate, a small K means reactants dominate.</li>
+      <li><b>Tip:</b> ICE tables are your best friend for equilibrium problems!</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Quiz: Self-Test</button>
+  <div class="chapter-content">
+    <ol>
+      <li>What does K >> 1 mean for a reaction?</li>
+      <li>Does a catalyst change the value of K?</li>
+      <li>If K = 1 × 10⁻⁹, is the reaction product- or reactant-favored?</li>
+      <li>In Le Chatelier's, what happens if you remove a product?</li>
+      <li>How does increasing temperature affect an endothermic equilibrium?</li>
+    </ol>
+    <details><summary>Answers</summary>
+      <ol>
+        <li>Products favored (lots of product at equilibrium)</li>
+        <li>No, only changes speed of reaching equilibrium</li>
+        <li>Reactant-favored</li>
+        <li>Shifts right (to make more product)</li>
+        <li>Shifts right (to absorb added heat)</li>
+      </ol>
+    </details>
+  </div>
+</div>
+
 
     <!-- Acids, Bases & pH -->
-    <div class="chapter" id="acids">
-      <h2>Acids, Bases & pH</h2>
-      <button class="collapsible">Theory, Math & Sample Q's</button>
-      <div class="chapter-content">
+    ```html
+<div class="chapter" id="acids">
+  <h2>Acids, Bases & pH</h2>
+
+  <button class="collapsible">Quick Overview</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Acid:</b> Substance that donates H<sup>+</sup> (proton donor).</li>
+      <li><b>Base:</b> Substance that accepts H<sup>+</sup> (proton acceptor).</li>
+      <li><b>pH:</b> Measure of acidity: <code>pH = -log[H<sup>+</sup>]</code>.</li>
+      <li><b>pOH:</b> Measure of basicity: <code>pOH = -log[OH<sup>-</sup>]</code>.</li>
+      <li><b>Kw:</b> Ion-product of water at 25°C: <code>[H<sup>+</sup>][OH<sup>-</sup>] = 1.0×10<sup>-14</sup></code>.</li>
+      <li><b>Relationship:</b> <code>pH + pOH = 14</code> at 25°C.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Glossary: Essential Terms</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Arrhenius Acid:</b> Produces H<sup>+</sup> in aqueous solution.</li>
+      <li><b>Arrhenius Base:</b> Produces OH<sup>-</sup> in aqueous solution.</li>
+      <li><b>Brønsted-Lowry Acid:</b> Proton donor.</li>
+      <li><b>Brønsted-Lowry Base:</b> Proton acceptor.</li>
+      <li><b>Lewis Acid:</b> Electron-pair acceptor.</li>
+      <li><b>Lewis Base:</b> Electron-pair donor.</li>
+      <li><b>Strong Acid:</b> Completely dissociates in water (e.g., HCl, HNO<sub>3</sub>).</li>
+      <li><b>Weak Acid:</b> Partially dissociates (e.g., CH<sub>3</sub>COOH).</li>
+      <li><b>Strong Base:</b> Completely dissociates (e.g., NaOH, KOH).</li>
+      <li><b>Weak Base:</b> Partially dissociates (e.g., NH<sub>3</sub>).</li>
+      <li><b>Conjugate Acid/Base:</b> Acid/base formed after proton transfer.</li>
+      <li><b>Polyprotic Acid:</b> Can donate more than one proton (e.g., H<sub>2</sub>SO<sub>4</sub>).</li>
+      <li><b>Buffer:</b> Solution that resists pH change upon addition of small amounts of acid or base.</li>
+      <li><b>Indicator:</b> Weak acid/base that changes color at a particular pH range.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Arrhenius vs Brønsted-Lowry vs Lewis</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Arrhenius:</b>
         <ul>
-          <li><b>Acids:</b> donate H⁺; <b>Bases:</b> accept H⁺</li>
-          <li><b>Strong/weak:</b> extent of ionization</li>
-          <li><b>pH:</b> <code>-log[H⁺]</code>; <b>pOH:</b> <code>-log[OH⁻]</code></li>
-          <li><b>Kw:</b> <code>[H⁺][OH⁻]=1×10⁻¹⁴</code> at 25°C</li>
-          <li><b>Titration:</b> MaVa = MbVb (for strong acid/base)</li>
+          <li>Acid → H<sup>+</sup> in water</li>
+          <li>Base → OH<sup>-</sup> in water</li>
         </ul>
-        <details><summary>Sample: What is pH of 0.01 M HCl?</summary>
-          <div>pH = -log(0.01) = 2</div>
-        </details>
+      </li>
+      <li><b>Brønsted-Lowry:</b>
+        <ul>
+          <li>Acid → Proton donor</li>
+          <li>Base → Proton acceptor</li>
+          <li>More general: applies in nonaqueous solvents</li>
+        </ul>
+      </li>
+      <li><b>Lewis:</b>
+        <ul>
+          <li>Acid → Electron pair acceptor</li>
+          <li>Base → Electron pair donor</li>
+          <li>Most general: includes many non-proton-transfer reactions</li>
+        </ul>
+      </li>
+    </ul>
+    <details><summary>Example: BF<sub>3</sub> + NH<sub>3</sub></summary>
+      <div>BF<sub>3</sub> (Lewis acid) accepts electron pair from NH<sub>3</sub> (Lewis base).</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Strong Acids & Bases</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Strong Acids:</b> HCl, HBr, HI, HNO<sub>3</sub>, HClO<sub>4</sub>, H<sub>2</sub>SO<sub>4</sub> (first proton).</li>
+      <li><b>Properties:</b> Complete dissociation; [H<sup>+</sup>] = initial acid concentration.</li>
+      <li><b>Strong Bases:</b> Group 1 hydroxides (NaOH, KOH), Ca(OH)<sub>2</sub>, Ba(OH)<sub>2</sub>.</li>
+      <li><b>Properties:</b> Complete dissociation; [OH<sup>-</sup>] = initial base concentration × stoichiometric factor.</li>
+    </ul>
+    <details><summary>Example: pH of 0.01 M HCl</summary>
+      <div>Strong acid → [H<sup>+</sup>] = 0.01 → pH = 2.00</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Weak Acid & Base Equilibria</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Weak Acid:</b> HA ⇌ H<sup>+</sup> + A<sup>-</sup></li>
+      <li><b>Ka (Acid Dissociation Constant):</b> <code>Ka = [H<sup>+</sup>][A<sup>-</sup>] / [HA]</code></li>
+      <li><b>Weak Base:</b> B + H<sub>2</sub>O ⇌ BH<sup>+</sup> + OH<sup>-</sup></li>
+      <li><b>Kb (Base Dissociation Constant):</b> <code>Kb = [BH<sup>+</sup>][OH<sup>-</sup>] / [B]</code></li>
+      <li><b>Relationship:</b> <code>Ka × Kb = Kw (1.0×10<sup>-14</sup>)</code></li>
+    </ul>
+    <details><summary>ICE Table Setup for Weak Acid</summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+    HA(aq) ⇌ H⁺(aq) + A⁻(aq)
+
+I:    C        0        0
+C:   -x       +x       +x
+E:    C-x      x        x
+        </pre>
+        Set Ka = x²/(C-x), solve for x (approximate C≫x).
       </div>
-    </div>
+    </details>
+    <details><summary>Example: pH of 0.10 M acetic acid (Ka=1.8×10<sup>-5</sup>)</summary>
+      <div>
+        ICE: x²/(0.10-x)=1.8×10<sup>-5</sup> → x≈√(1.8×10<sup>-6</sup>)=1.34×10<sup>-3</sup><br>
+        [H<sup>+</sup>]≈1.34×10<sup>-3</sup> → pH ≈ 2.87
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Percent Ionization</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Percent Ionization:</b> <code>% = ([H<sup>+</sup>]equil / [HA]initial) × 100</code></li>
+      <li>Decreases as initial concentration increases (weaker fraction dissociated).</li>
+    </ul>
+    <details><summary>Example: % ionization of 0.10 M CH<sub>3</sub>COOH</summary>
+      <div>% = (1.34×10<sup>-3</sup> / 0.10) × 100 = 1.34%</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Polyprotic Acids</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Diprotic:</b> H<sub>2</sub>A ⇌ H<sup>+</sup> + HA<sup>-</sup> (Ka<sub>1</sub>); HA<sup>-</sup> ⇌ H<sup>+</sup> + A<sup>2-</sup> (Ka<sub>2</sub>).</li>
+      <li>Ka<sub>1</sub>≫Ka<sub>2</sub>; treat sequentially.</li>
+      <li>Triprotic (H<sub>3</sub>A) similar (H<sub>3</sub>A → H<sub>2</sub>A<sup>-</sup> → HA<sup>2-</sup> → A<sup>3-</sup>).</li>
+    </ul>
+    <details><summary>Example: pH of 0.10 M H<sub>2</sub>SO<sub>4</sub> (Ka<sub>1</sub> large, Ka<sub>2</sub>=1.2×10<sup>-2</sup>)</summary>
+      <div>
+        First proton complete; [H<sup>+</sup>]=0.10 (from first step). Second step: HA<sup>-</sup> calculation:<br>
+        ICE: [HA<sup>-</sup>]=0.10, Ka<sub>2</sub>=1.2×10<sup>-2</sup>, solve x; total [H<sup>+</sup>]≈0.10+x.
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Buffers & Henderson-Hasselbalch</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Buffer:</b> Mixture of weak acid & its conjugate base (or vice versa) that resists pH change.</li>
+      <li><b>Henderson-Hasselbalch:</b> <code>pH = pKa + log([A<sup>-</sup>]/[HA])</code></li>
+      <li><b>Useful:</b> Easy pH calculation without ICE table.</li>
+    </ul>
+    <details><summary>Example: pH of acetate buffer (0.10 M CH<sub>3</sub>COOH and 0.10 M CH<sub>3</sub>COO<sup>-</sup>)</summary>
+      <div>pH = 4.74 + log(0.10/0.10) = 4.74</div>
+    </details>
+    <details><summary>Buffer Capacity & Range</summary>
+      <div>
+        Effective within ±1 pH unit of pKa; greatest when [acid]=[base].
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Titrations & Indicators</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Titration:</b> Gradual addition of titrant to analyte until equivalence point (stoichiometric point) is reached.</li>
+      <li><b>Strong Acid–Strong Base:</b> Equivalence pH ≈ 7.</li>
+      <li><b>Strong Acid–Weak Base:</b> Equivalence pH < 7.</li>
+      <li><b>Weak Acid–Strong Base:</b> Equivalence pH > 7.</li>
+      <li><b>Polyprotic Titrations:</b> Multiple equivalence points for each proton.</li>
+    </ul>
+    <details><summary>Indicator Choice</summary>
+      <div>
+        Choose indicator whose pKa ≈ pH at equivalence point.
+      </div>
+    </details>
+    <details><summary>Example: Titrate 25 mL 0.10 M CH<sub>3</sub>COOH with 0.10 M NaOH.</summary>
+      <div>
+        Equivalence at 25 mL added; pH > 7. Use phenolphthalein (pKa ~9).
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Salt Hydrolysis & pH of Salts</button>
+  <div class="chapter-content">
+    <ul>
+      <li>Salt of strong acid + strong base: neutral (pH ≈ 7).</li>
+      <li>Salt of strong acid + weak base: acidic.</li>
+      <li>Salt of weak acid + strong base: basic.</li>
+      <li>Salt of weak acid + weak base: pH depends on relative Ka, Kb.</li>
+    </ul>
+    <details><summary>Example: pH of 0.10 M NH<sub>4</sub>Cl</summary>
+      <div>
+        NH<sub>4</sub><sup>+</sup> is conjugate acid of weak base NH<sub>3</sub>: pH = (pKa+ pKw-pKb)/2 approximate.
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Common Ion Effect</button>
+  <div class="chapter-content">
+    <ul>
+      <li>Addition of common ion reduces ionization of weak acid/base or solubility of salt.</li>
+      <li>Used to shift equilibrium (Le Chatelier’s) in acid/base and solubility problems.</li>
+    </ul>
+    <details><summary>Example: Solubility of AgCl in NaCl solution</summary>
+      <div>
+        AgCl(s) ⇌ Ag<sup>+</sup> + Cl<sup>-</sup>; adding Cl<sup>-</sup> shifts left, reduces solubility.
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Autoionization of Water</button>
+  <div class="chapter-content">
+    <ul>
+      <li>H<sub>2</sub>O ⇌ H<sup>+</sup> + OH<sup>-</sup>; Kw = 1.0×10<sup>-14</sup> at 25°C.</li>
+      <li>Pure water: [H<sup>+</sup>] = [OH<sup>-</sup>] = 1.0×10<sup>-7</sup> M; pH = 7.</li>
+      <li>Temperature dependence: Kw increases with temperature; pH neutral ≠7 at other T.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Acid–Base Equilibrium ICE Tables</button>
+  <div class="chapter-content">
+    <ul>
+      <li>Set up ICE for weak acid, weak base, salt hydrolysis.</li>
+      <li>Solve for x (concentration change) using Ka or Kb expressions.</li>
+      <li>Approximation: If Ka/Kb << initial conc, C-x ≈ C.</li>
+    </ul>
+    <details><summary>Example: ICE for 0.05 M NH₃</summary>
+      <div>
+        NH₃ + H₂O ⇌ NH₄<sup>+</sup> + OH<sup>-</sup>; Kb=1.8×10<sup>-5</sup>  
+        I: 0.05, 0, 0  
+        C: -x, +x, +x  
+        E: 0.05-x, x, x  
+        Kb = x²/(0.05-x) ≈ x²/0.05 → x ≈ √(9×10⁻⁷) = 9.49×10⁻⁴ M → pOH, pH.
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">Advanced AP/Honors Extensions</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Polyprotic Titration Curves:</b> Multiple equivalence points; half-equivalence pH = pKa.</li>
+      <li><b>Thermodynamics:</b> ΔG = ΔG° + RT ln Q; at equilibrium ΔG=0 → ΔG° = -RT ln K.</li>
+      <li><b>Electrochemical Cells & pH:</b> Nernst equation can incorporate [H<sup>+</sup>].</li>
+      <li><b>Computational Buffers:</b> Use Henderson-Hasselbalch iteratively for polyprotic systems.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Practice Problems (With Hints & Answers)</button>
+  <div class="chapter-content">
+    <ol>
+      <li>
+        Calculate pH of 0.020 M HNO<sub>3</sub>.
+        <details><summary>Hint</summary><div>Strong acid: [H<sup>+</sup>] = 0.020.</div></details>
+        <details><summary>Answer</summary><div>pH = 1.70</div></details>
+      </li>
+      <li>
+        Calculate pH of 0.10 M NH<sub>3</sub> (Kb=1.8×10<sup>-5</sup>).
+        <details><summary>Hint</summary><div>ICE table for NH₃ + H₂O.</div></details>
+        <details><summary>Answer</summary><div>pH ≈ 11.04</div></details>
+      </li>
+      <li>
+        What is [H<sup>+</sup>] in a solution where pH = 3.25?
+        <details><summary>Hint</summary><div>Inverse log: 10<sup>-pH</sup>.</div></details>
+        <details><summary>Answer</summary><div>[H<sup>+</sup>] = 5.62×10<sup>-4</sup> M</div></details>
+      </li>
+      <li>
+        A buffer contains 0.10 M acetic acid and 0.20 M acetate. pKa=4.74. Calculate pH.
+        <details><summary>Hint</summary><div>Henderson-Hasselbalch.</div></details>
+        <details><summary>Answer</summary><div>pH = 4.74 + log(0.20/0.10)=5.04</div></details>
+      </li>
+      <li>
+        At equivalence in titration of 25 mL 0.10 M HCl with 0.10 M NaOH, what is pH?
+        <details><summary>Hint</summary><div>Strong acid-strong base → pH=7.</div></details>
+        <details><summary>Answer</summary><div>pH = 7.00</div></details>
+      </li>
+      <li>
+        Calculate the pH of a 0.05 M solution of NaCN (Kb of CN<sup>-</sup>=1.6×10<sup>-5</sup>).
+        <details><summary>Hint</summary><div>CN<sup>-</sup> + H₂O ⇌ HCN + OH<sup>-</sup></div></details>
+        <details><summary>Answer</summary><div>pH ≈ 11.03</div></details>
+      </li>
+      <li>
+        Determine the second equivalence point pH for diprotic H<sub>2</sub>CO<sub>3</sub> if Ka<sub>2</sub>=4.3×10<sup>-11</sup>.
+        <details><summary>Hint</summary><div>Use salt hydrolysis and Kb for HCO₃<sup>-</sup>.</div></details>
+        <details><summary>Answer</summary><div>pH ≈ 8.3</div></details>
+      </li>
+    </ol>
+  </div>
+
+  <button class="collapsible">Common Misconceptions & Tips</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Misconception:</b> All acids turn litmus red.<br>
+        <b>Correction:</b> Some organic acids weakly change indicator; use appropriate indicator.</li>
+      <li><b>Tip:</b> Always convert pH to [H<sup>+</sup>] or vice versa with logs.</li>
+      <li><b>Misconception:</b> Buffers prevent any pH change.<br>
+        <b>Correction:</b> They resist small changes; large additions overwhelm buffer capacity.</li>
+      <li><b>Tip:</b> In polyprotic equilibria, treat each proton separately if Ka values differ by >100.</li>
+      <li><b>Tip:</b> At half-equivalence point, pH=pKa for that proton.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Quiz: Self-Test</button>
+  <div class="chapter-content">
+    <ol>
+      <li>Define a Brønsted-Lowry acid and base.</li>
+      <li>What is the pH of pure water at 25°C?</li>
+      <li>Which salt solution is basic: NaNO₃, NH₄Cl, KCN?</li>
+      <li>Calculate pH of 0.050 M HF (Ka=7.2×10<sup>-4</sup>).</li>
+      <li>At half-equivalence, pH = ?</li>
+    </ol>
+    <details><summary>Answers</summary>
+      <ol>
+        <li>Acid=proton donor; Base=proton acceptor.</li>
+        <li>pH = 7.00.</li>
+        <li>KCN (CN<sup>-</sup> is basic).</li>
+        <li>ICE: x²/(0.05-x)=7.2×10<sup>-4</sup>; x≈0.00599; pH≈2.22.</li>
+        <li>pH = pKa.</li>
+      </ol>
+    </details>
+  </div>
+</div>
 
     <!-- Comprehensive Review -->
     <div class="chapter" id="review">
