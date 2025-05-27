@@ -559,451 +559,421 @@
   </div>
 </div>
     <!-- Bonding & Structure -->
-   <div class="chapter" id="bonding">
+<div class="chapter" id="bonding">
   <h2>Bonding & Structure</h2>
 
-  <button class="collapsible">Quick Overview</button>
+  <!-- Quick Overview -->
+  <button class="collapsible">Bonding Overview</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Chemical Bond:</b> The attractive force holding atoms or ions together in compounds.</li>
-      <li><b>Main Types:</b> Ionic (transfer), Covalent (sharing), Metallic (“sea of electrons”).</li>
-      <li><b>Lewis Dot Structures:</b> Diagrams showing valence electrons and bonding.</li>
-      <li><b>VSEPR Theory:</b> Valence Shell Electron Pair Repulsion — predicts molecular shapes.</li>
+      <li>Chemical bonds hold atoms together to form compounds.</li>
+      <li><b>Main bond types:</b> Ionic (transfer e–), Covalent (share e–), Metallic (“sea of e–”)</li>
+      <li><b>Intermolecular forces (IMFs):</b> Attractions between molecules (not within)</li>
     </ul>
   </div>
 
-  <button class="collapsible">Table: Types of Chemical Bonds</button>
+  <!-- Types of Bonds -->
+  <button class="collapsible">Types of Bonds</button>
   <div class="chapter-content">
     <table border="1" cellpadding="4" style="background:#f3f4f6;">
-      <tr><th>Bond Type</th><th>How Formed</th><th>Properties</th><th>Example</th></tr>
+      <tr><th>Bond Type</th><th>Formed by</th><th>Properties</th><th>Examples</th></tr>
       <tr>
         <td>Ionic</td>
-        <td>Transfer of electrons (metal + nonmetal)</td>
-        <td>High mp/bp, conducts when molten/aq, crystalline</td>
+        <td>Transfer e– (metal + nonmetal)</td>
+        <td>High mp/bp, solid, conducts when molten/aq, brittle</td>
         <td>NaCl, MgO</td>
       </tr>
       <tr>
         <td>Covalent</td>
-        <td>Sharing of electrons (nonmetal + nonmetal)</td>
-        <td>Low mp/bp, not conductive, discrete molecules</td>
+        <td>Share e– (nonmetals)</td>
+        <td>Low mp/bp, may be gas/liquid/solid, don't conduct</td>
         <td>H<sub>2</sub>O, CO<sub>2</sub></td>
       </tr>
       <tr>
         <td>Metallic</td>
-        <td>“Sea of electrons” around positive ions (metal + metal)</td>
-        <td>Conducts, malleable, ductile</td>
+        <td>Metal atoms, “sea of e–”</td>
+        <td>Conductive, malleable, ductile, shiny</td>
         <td>Fe, Cu, Al</td>
+      </tr>
+      <tr>
+        <td>Hydrogen Bond</td>
+        <td>H with N, O, or F</td>
+        <td>High bp/mp for molecular, important for water, DNA</td>
+        <td>H<sub>2</sub>O, NH<sub>3</sub></td>
       </tr>
     </table>
   </div>
 
-  <button class="collapsible">In-Depth: Ionic Bonding</button>
+  <!-- Lewis Structures (Electron Dot Diagrams) -->
+  <button class="collapsible">Lewis Structures & Electron Dot Diagrams</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Ions:</b> Atoms/molecules with a net charge (cation = +, anion = –).</li>
-      <li><b>Ionic Compounds:</b> Usually crystalline solids, formula unit shows lowest ratio.</li>
-      <li><b>Properties:</b>
-        <ul>
-          <li>High melting/boiling points</li>
-          <li>Conduct electricity when molten or in solution</li>
-          <li>Brittle, not malleable</li>
-        </ul>
+      <li>Shows valence e– as dots; lines for bonds.</li>
+      <li><b>How to draw:</b>
+        <ol>
+          <li>Count total valence electrons.</li>
+          <li>Arrange atoms (central = least electronegative, H never center).</li>
+          <li>Single bonds between center & outer atoms.</li>
+          <li>Fill outer atoms’ octets, then central atom.</li>
+          <li>Double/triple bonds if needed to complete octet.</li>
+        </ol>
       </li>
-      <li><b>Electrostatic Forces:</b> Strong attractions between oppositely charged ions.</li>
+      <li><b>Exceptions:</b> H (2e–), Be (4e–), B (6e–), expanded octet for P, S, Xe, etc.</li>
     </ul>
-    <details><summary>Example: Why is NaCl solid at room temperature?</summary>
-      <div>Strong ionic bonds require lots of energy to break.</div>
-    </details>
-    <details><summary>Visual: Lattice Structure</summary>
+    <details><summary>Example: Draw H<sub>2</sub>O Lewis structure</summary>
       <div>
         <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
-Na<sup>+</sup>  Cl<sup>-</sup>  Na<sup>+</sup>  Cl<sup>-</sup>
-Cl<sup>-</sup>  Na<sup>+</sup>  Cl<sup>-</sup>  Na<sup>+</sup>
-        </pre>
-      </div>
-    </details>
-  </div>
-
-  <button class="collapsible">In-Depth: Covalent Bonding</button>
-  <div class="chapter-content">
-    <ul>
-      <li><b>Molecular Compounds:</b> Formed from nonmetals sharing electrons.</li>
-      <li><b>Bond Types:</b>
-        <ul>
-          <li>Single: 1 pair shared (H–H)</li>
-          <li>Double: 2 pairs shared (O=O)</li>
-          <li>Triple: 3 pairs shared (N≡N)</li>
-        </ul>
-      </li>
-      <li><b>Lone Pairs:</b> Pairs of electrons not involved in bonding, affect shape (VSEPR).</li>
-      <li><b>Properties:</b>
-        <ul>
-          <li>Low melting/boiling points</li>
-          <li>Poor conductors</li>
-          <li>May exist as gas, liquid, or solid</li>
-        </ul>
-      </li>
-    </ul>
-    <details><summary>Visual: Covalent Bond Example (H<sub>2</sub>O)</summary>
-      <div>
-        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
-H:O:H
- (bent geometry)
-        </pre>
-      </div>
-    </details>
-    <details><summary>Q: Why does CO<sub>2</sub> have a linear shape?</summary>
-      <div>No lone pairs on central atom, so O=C=O is linear (VSEPR).</div>
-    </details>
-  </div>
-
-  <button class="collapsible">In-Depth: Metallic Bonding</button>
-  <div class="chapter-content">
-    <ul>
-      <li><b>Metallic Bonds:</b> Metal cations surrounded by a “sea” of delocalized electrons.</li>
-      <li><b>Properties:</b>
-        <ul>
-          <li>Conduct electricity & heat</li>
-          <li>Malleable (bendable), ductile (drawn into wire)</li>
-          <li>Shiny (luster)</li>
-        </ul>
-      </li>
-      <li><b>Alloys:</b> Mixtures of metals (brass = Cu + Zn, steel = Fe + C)</li>
-    </ul>
-    <details><summary>Q: Why are metals good conductors?</summary>
-      <div>Free electrons can move and carry current/energy.</div>
-    </details>
-  </div>
-
-  <button class="collapsible">Polarity, Electronegativity, & IMFs</button>
-  <div class="chapter-content">
-    <ul>
-      <li><b>Electronegativity:</b> Ability of atom to attract e– in a bond (F = highest, Fr = lowest)</li>
-      <li><b>Bond Polarity:</b>
-        <ul>
-          <li>Nonpolar covalent: ∆EN 0–0.2</li>
-          <li>Polar covalent: ∆EN 0.3–1.7</li>
-          <li>Ionic: ∆EN > 1.7</li>
-        </ul>
-      </li>
-      <li><b>Molecular Polarity:</b> Determined by shape and bond polarity (symmetry = nonpolar, asymmetry = polar)</li>
-      <li><b>Intermolecular Forces:</b>
-        <ul>
-          <li>Dispersion (all molecules)</li>
-          <li>Dipole-dipole (polar molecules)</li>
-          <li>Hydrogen bonding (H with N, O, F)</li>
-        </ul>
-      </li>
-    </ul>
-    <details><summary>Practice: Why is H<sub>2</sub>O a liquid at room temp, but H<sub>2</sub> is a gas?</summary>
-      <div>Strong hydrogen bonds in H<sub>2</sub>O raise boiling point.</div>
-    </details>
-    <details><summary>Q: Draw the Lewis structure for NH<sub>3</sub> (ammonia).</summary>
-      <div>
-        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
-  H
-  |
-H-N-H
+H–O–H
   ..
-(lone pair)
+  (2 lone pairs on O)
+        </pre>
+      </div>
+    </details>
+    <details><summary>Example: Draw CO<sub>2</sub></summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+O=C=O
         </pre>
       </div>
     </details>
   </div>
 
-  <button class="collapsible">VSEPR Theory: Molecular Shapes</button>
+  <!-- Molecular Structure & VSEPR -->
+  <button class="collapsible">Molecular Structure & VSEPR Shapes</button>
   <div class="chapter-content">
     <ul>
-      <li><b>VSEPR:</b> Electron pairs repel, so molecules adopt shapes to minimize repulsion.</li>
-      <li><b>Common Shapes:</b>
+      <li><b>VSEPR Theory:</b> Electron pairs repel, so shapes minimize repulsion.</li>
+      <li>
+        <table border="1" cellpadding="3" style="background:#f3f4f6;">
+          <tr><th>Shape</th><th>Electron Groups</th><th>Bonded Atoms</th><th>Lone Pairs</th><th>Angle</th><th>Example</th></tr>
+          <tr><td>Linear</td><td>2</td><td>2</td><td>0</td><td>180°</td><td>CO<sub>2</sub></td></tr>
+          <tr><td>Trigonal Planar</td><td>3</td><td>3</td><td>0</td><td>120°</td><td>BF<sub>3</sub></td></tr>
+          <tr><td>Tetrahedral</td><td>4</td><td>4</td><td>0</td><td>109.5°</td><td>CH<sub>4</sub></td></tr>
+          <tr><td>Trigonal Pyramidal</td><td>4</td><td>3</td><td>1</td><td>~107°</td><td>NH<sub>3</sub></td></tr>
+          <tr><td>Bent</td><td>4</td><td>2</td><td>2</td><td>~105°</td><td>H<sub>2</sub>O</td></tr>
+        </table>
+      </li>
+      <li><b>Key:</b> Lone pairs compress angles. Use dot structures to count groups!</li>
+    </ul>
+    <details><summary>Which shape for SO<sub>2</sub>?</summary>
+      <div>Bent (lone pair on S).</div>
+    </details>
+    <details><summary>Mnemonic:</summary>
+      <div>“Lone pairs push harder!”</div>
+    </details>
+  </div>
+
+  <!-- Bond Polarity & Electronegativity -->
+  <button class="collapsible">Bond Polarity & Electronegativity</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Electronegativity:</b> Atom’s ability to attract e– (F is highest).</li>
+      <li>
         <ul>
-          <li>Linear (CO<sub>2</sub>): 180°</li>
-          <li>Bent (H<sub>2</sub>O): <130°</li>
-          <li>Trigonal planar (BF<sub>3</sub>): 120°</li>
-          <li>Tetrahedral (CH<sub>4</sub>): 109.5°</li>
-          <li>Pyramidal (NH<sub>3</sub>): <109.5°</li>
+          <li>Nonpolar Covalent: ΔEN < 0.5</li>
+          <li>Polar Covalent: ΔEN 0.5–1.7</li>
+          <li>Ionic: ΔEN > 1.7</li>
         </ul>
       </li>
+      <li><b>Molecular Polarity:</b> Depends on shape + bond polarity (symmetrical = nonpolar overall).</li>
     </ul>
-    <details><summary>Mnemonic: "Lone pairs push harder!"</summary>
-      <div>Extra lone pairs compress bond angles.</div>
+    <details><summary>Example: Is CO<sub>2</sub> polar?</summary>
+      <div>Linear and symmetrical: nonpolar overall.</div>
     </details>
-    <details><summary>Q: Which shape does SO<sub>2</sub> have?</summary>
-      <div>Bent (lone pair on S, like O₃ or H₂O).</div>
+    <details><summary>Example: Is H<sub>2</sub>O polar?</summary>
+      <div>Bent, asymmetrical, polar bonds = polar molecule.</div>
     </details>
   </div>
 
-  <button class="collapsible">Common Misconceptions & Tips</button>
+  <!-- Intermolecular Forces (IMFs) -->
+  <button class="collapsible">Intermolecular Forces (IMFs)</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Misconception:</b> Ionic compounds always dissolve in water.<br>
-        <b>Correction:</b> Some are insoluble (ex: AgCl, BaSO₄).</li>
-      <li><b>Tip:</b> Use electronegativity differences and VSEPR to determine polarity.</li>
-      <li><b>Misconception:</b> Lone pairs are always on outer atoms.<br>
-        <b>Correction:</b> They’re often on central atoms!</li>
+      <li><b>Dispersion (London):</b> All molecules, weak, increases with mass/size.</li>
+      <li><b>Dipole-Dipole:</b> Polar molecules, medium strength.</li>
+      <li><b>Hydrogen Bonding:</b> H with N, O, F; strongest, very important in water, DNA.</li>
     </ul>
+    <details><summary>Which IMFs in NH<sub>3</sub>?</summary>
+      <div>Dispersion, dipole-dipole, hydrogen bonding.</div>
+    </details>
+    <details><summary>Why does H<sub>2</sub>O have a high boiling point?</summary>
+      <div>Strong hydrogen bonds between molecules.</div>
+    </details>
   </div>
 
-  <button class="collapsible">Challenge Problems (With Hints & Answers)</button>
+  <!-- Resonance, Octet Exceptions -->
+  <button class="collapsible">Resonance & Octet Exceptions</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Resonance:</b> Multiple valid Lewis structures (actual structure is average).</li>
+      <li><b>Octet Exceptions:</b> H (2e–), Be (4e–), B (6e–); period 3+ elements may have more than 8.</li>
+    </ul>
+    <details><summary>Example: Draw resonance for O<sub>3</sub></summary>
+      <div>O=O–O ↔ O–O=O (bonds are “averaged” in real structure).</div>
+    </details>
+    <details><summary>Which atoms can have expanded octets?</summary>
+      <div>P, S, Xe, Cl (period 3 and below).</div>
+    </details>
+  </div>
+
+  <!-- Practice Problems -->
+  <button class="collapsible">Practice Problems (with Answers)</button>
   <div class="chapter-content">
     <ol>
       <li>
-        What is the shape and polarity of CF<sub>4</sub>?
-        <details><summary>Hint</summary><div>4 F atoms around central C; all bonds same.</div></details>
-        <details><summary>Answer</summary><div>Tetrahedral, nonpolar (symmetrical, dipoles cancel).</div></details>
-      </li>
-      <li>
-        Which has the higher melting point, NaCl or H<sub>2</sub>O?
-        <details><summary>Hint</summary><div>Think about bond strength and type.</div></details>
-        <details><summary>Answer</summary><div>NaCl (ionic, much stronger bonds).</div></details>
-      </li>
-      <li>
-        Draw a Lewis structure for NO<sub>3</sub><sup>–</sup>.
-        <details><summary>Hint</summary><div>Remember to add an electron for the charge.</div></details>
+        Draw the Lewis structure for NH<sub>4</sub><sup>+</sup>.
         <details><summary>Answer</summary>
           <div>
             <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
-O=N-O<sup>–</sup>
- ||
- O
-(resonance, one O has negative charge)
+    H
+    |
+H–N–H
+    |
+    H
+(No lone pairs; 8 shared e–, +1 charge)
             </pre>
           </div>
         </details>
       </li>
+      <li>
+        What type of bonding is in NaCl? In CO<sub>2</sub>?
+        <details><summary>Answer</summary>
+          <div>
+            NaCl: ionic;<br>CO<sub>2</sub>: covalent (nonpolar overall)
+          </div>
+        </details>
+      </li>
+      <li>
+        Which molecule has the strongest IMFs: CH<sub>4</sub>, H<sub>2</sub>O, CO<sub>2</sub>?
+        <details><summary>Answer</summary>
+          <div>H<sub>2</sub>O (hydrogen bonding)</div>
+        </details>
+      </li>
+      <li>
+        Is SF<sub>6</sub> polar or nonpolar?
+        <details><summary>Answer</summary>
+          <div>Nonpolar (octahedral, symmetrical, dipoles cancel)</div>
+        </details>
+      </li>
     </ol>
   </div>
 
+  <!-- Glossary (Essential Terms) -->
   <button class="collapsible">Glossary (Essential Terms)</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Bond:</b> Attractive force holding atoms together</li>
-      <li><b>Ionic Bond:</b> Transfer of electrons, forms ions</li>
-      <li><b>Covalent Bond:</b> Sharing electrons</li>
-      <li><b>Metallic Bond:</b> Delocalized electrons in metals</li>
-      <li><b>Lewis Structure:</b> Diagram of valence electrons</li>
-      <li><b>VSEPR:</b> Model for predicting molecule shape</li>
-      <li><b>Intermolecular Forces (IMFs):</b> Attractions between molecules</li>
-      <li><b>Electronegativity:</b> Atom’s ability to attract electrons</li>
-      <li><b>Polarity:</b> Unequal sharing of electrons</li>
+      <li><b>Ionic Bond:</b> Transfer of e– from metal to nonmetal</li>
+      <li><b>Covalent Bond:</b> Sharing e– between nonmetals</li>
+      <li><b>Metallic Bond:</b> Metals, “sea of e–”</li>
+      <li><b>Intermolecular Force (IMF):</b> Attraction between molecules</li>
+      <li><b>Hydrogen Bond:</b> Strong IMF: H–N, H–O, H–F</li>
+      <li><b>Lewis Structure:</b> Diagram of valence e–/bonding</li>
+      <li><b>Lone Pair:</b> Pair of e– not involved in bonding</li>
+      <li><b>Resonance:</b> Multiple valid dot structures</li>
+      <li><b>Electronegativity:</b> Atom’s attraction for e–</li>
+      <li><b>Polarity:</b> Uneven sharing of e– (partial charges)</li>
+      <li><b>VSEPR:</b> Model for molecular shape</li>
+      <li><b>Bond Angle:</b> Angle between bonds in molecule</li>
+      <li><b>Octet Rule:</b> Atoms tend to have 8 valence e–</li>
     </ul>
   </div>
 
+  <!-- Quiz: Self-Test -->
   <button class="collapsible">Quiz: Self-Test</button>
   <div class="chapter-content">
     <ol>
-      <li>Which is the best example of a metallic bond: Cu, CO<sub>2</sub>, NaCl, H<sub>2</sub>O?</li>
-      <li>What shape does methane (CH<sub>4</sub>) have?</li>
-      <li>How many electrons are shared in a double bond?</li>
-      <li>Which molecule has hydrogen bonding: NH<sub>3</sub>, CCl<sub>4</sub>, CH<sub>4</sub>, CO<sub>2</sub>?</li>
-      <li>Is O<sub>2</sub> nonpolar or polar?</li>
+      <li>Which bond is most polar: H–F, H–Cl, H–Br?</li>
+      <li>What is the shape of CH<sub>4</sub>?</li>
+      <li>Draw Lewis structure for ClF<sub>3</sub> (chlorine trifluoride).</li>
+      <li>What kind of IMFs in C<sub>6</sub>H<sub>6</sub> (benzene)?</li>
+      <li>Which compound is ionic: Na<sub>2</sub>O, CO<sub>2</sub>, H<sub>2</sub>O?</li>
     </ol>
     <details><summary>Answers</summary>
       <ol>
-        <li>Cu (copper, metallic bond)</li>
-        <li>Tetrahedral</li>
-        <li>4 electrons (2 pairs)</li>
-        <li>NH<sub>3</sub></li>
-        <li>Nonpolar (same element, no EN difference)</li>
+        <li>H–F (greatest EN difference)</li>
+        <li>Tetrahedral (109.5°)</li>
+        <li>Cl center, 3 F atoms, 2 lone pairs on Cl (T-shaped)</li>
+        <li>Dispersion only (nonpolar, no H-bonding, not polar)</li>
+        <li>Na<sub>2</sub>O</li>
       </ol>
     </details>
   </div>
 </div>
-
     <!-- Gases & Gas Laws -->
    <div class="chapter" id="gases">
   <h2>Gases & Gas Laws</h2>
-
+  
+  <!-- Quick Overview -->
   <button class="collapsible">Quick Overview</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Gas:</b> A state of matter with indefinite shape and volume, compressible, fills container.</li>
-      <li><b>Kinetic Molecular Theory:</b> Gases made of particles in constant, random motion; mostly empty space; elastic collisions.</li>
-      <li><b>Gas Laws:</b> Relate pressure (P), volume (V), temperature (T), and amount (n, moles) of a gas.</li>
-      <li><b>STP:</b> Standard Temperature & Pressure (0°C, 273.15 K, 1 atm, 22.4 L/mol).</li>
+      <li><b>Gas:</b> State of matter with indefinite shape and volume, compressible, expands to fill container.</li>
+      <li><b>Kinetic Molecular Theory (KMT):</b> 
+        <ul>
+          <li>Gases made of tiny, fast-moving particles.</li>
+          <li>Most volume is empty space; particles move randomly, collide elastically.</li>
+          <li>Temperature (K) is proportional to average kinetic energy.</li>
+        </ul>
+      </li>
     </ul>
   </div>
-
-  <button class="collapsible">Table: Gas Properties & Units</button>
+  
+  <!-- Gas Properties & Units -->
+  <button class="collapsible">Gas Properties & Units</button>
   <div class="chapter-content">
     <table border="1" cellpadding="4" style="background:#f3f4f6;">
-      <tr><th>Property</th><th>Definition</th><th>Common Units</th></tr>
-      <tr>
-        <td>Pressure (P)</td>
-        <td>Force per unit area</td>
-        <td>atm, kPa, mmHg, torr, psi</td>
-      </tr>
-      <tr>
-        <td>Volume (V)</td>
-        <td>Space occupied by gas</td>
-        <td>L, mL, cm³</td>
-      </tr>
-      <tr>
-        <td>Temperature (T)</td>
-        <td>Average kinetic energy of particles</td>
-        <td>K (Kelvin, always!), °C (for conversion)</td>
-      </tr>
-      <tr>
-        <td>Amount (n)</td>
-        <td>Quantity of gas</td>
-        <td>moles (mol)</td>
-      </tr>
+      <tr><th>Property</th><th>Symbol</th><th>Common Units</th></tr>
+      <tr><td>Pressure</td><td>P</td><td>atm, kPa, mmHg, torr, psi</td></tr>
+      <tr><td>Volume</td><td>V</td><td>L, mL, cm³</td></tr>
+      <tr><td>Temperature</td><td>T</td><td>K (must use Kelvin!)</td></tr>
+      <tr><td>Amount</td><td>n</td><td>moles (mol)</td></tr>
     </table>
-    <p><b>Conversions:</b> 1 atm = 101.3 kPa = 760 mmHg = 14.7 psi</p>
-  </div>
-
-  <button class="collapsible">In-Depth: Kinetic Molecular Theory (KMT)</button>
-  <div class="chapter-content">
     <ul>
-      <li>Gases consist of small particles separated by lots of empty space.</li>
-      <li>Collisions are perfectly elastic (no energy loss).</li>
-      <li>Particles are in constant, straight-line motion.</li>
-      <li>Average kinetic energy ∝ Kelvin temperature (<code>KE ∝ T</code>).</li>
-      <li>Explains compressibility, expansion, low density, and diffusion.</li>
+      <li>STP (Standard Temp & Pressure): 0°C (273 K), 1 atm, 22.4 L/mol gas.</li>
+      <li><b>Unit conversions:</b> 1 atm = 101.3 kPa = 760 mmHg = 14.7 psi</li>
     </ul>
-    <details><summary>Extension: Real vs Ideal Gases</summary>
-      <div>
-        <ul>
-          <li><b>Ideal gas:</b> Obeys KMT at all T & P (doesn't exist, but a good model).</li>
-          <li><b>Real gas:</b> Deviates at low T/high P (particles have volume, IMFs matter).</li>
-        </ul>
-      </div>
-    </details>
   </div>
-
-  <button class="collapsible">Gas Laws: Core Equations</button>
+  
+  <!-- Gas Laws: Core Equations -->
+  <button class="collapsible">Gas Laws & Core Equations</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Boyle’s Law:</b> <code>P₁V₁ = P₂V₂</code> (T, n constant) — P↑ V↓ (inverse)</li>
-      <li><b>Charles’ Law:</b> <code>V₁/T₁ = V₂/T₂</code> (P, n constant) — T↑ V↑ (direct, T in K!)</li>
-      <li><b>Gay-Lussac’s Law:</b> <code>P₁/T₁ = P₂/T₂</code> (V, n constant) — T↑ P↑</li>
-      <li><b>Combined Gas Law:</b> <code>P₁V₁/T₁ = P₂V₂/T₂</code> (n constant)</li>
-      <li><b>Avogadro’s Law:</b> <code>V₁/n₁ = V₂/n₂</code> (P, T constant) — more moles, more volume</li>
-      <li><b>Ideal Gas Law:</b> <code>PV = nRT</code> (R = 0.0821 L·atm/mol·K or 8.31 kPa·L/mol·K)</li>
-      <li><b>Dalton’s Law:</b> <code>P_total = P₁ + P₂ + ...</code> (sum of partial pressures)</li>
-      <li><b>Graham’s Law:</b> <code>Rate₁/Rate₂ = √(M₂/M₁)</code> (diffusion/effusion rates)</li>
+      <li><b>Boyle’s Law:</b> P₁V₁ = P₂V₂ (T, n constant)</li>
+      <li><b>Charles’s Law:</b> V₁/T₁ = V₂/T₂ (P, n constant; T in K!)</li>
+      <li><b>Gay-Lussac’s Law:</b> P₁/T₁ = P₂/T₂ (V, n constant)</li>
+      <li><b>Combined Gas Law:</b> P₁V₁/T₁ = P₂V₂/T₂ (n constant)</li>
+      <li><b>Avogadro’s Law:</b> V₁/n₁ = V₂/n₂ (P, T constant)</li>
+      <li><b>Ideal Gas Law:</b> PV = nRT (R = 0.0821 L·atm/mol·K or 8.31 kPa·L/mol·K)</li>
+      <li><b>Dalton’s Law:</b> P<sub>total</sub> = P₁ + P₂ + ...</li>
+      <li><b>Graham’s Law (diffusion/effusion):</b> Rate₁/Rate₂ = √(M₂/M₁)</li>
     </ul>
     <details><summary>Mnemonic: “Can Good People Always Party Down?”</summary>
-      <div>Charles, Gay-Lussac, Boyle, Avogadro, Dalton (Gas Laws)</div>
+      <div>Charles, Gay-Lussac, Boyle, Avogadro, Dalton</div>
     </details>
   </div>
-
-  <button class="collapsible">Worked Examples & Step-by-Step Solutions</button>
+  
+  <!-- Worked Examples & Step-by-Step Solutions -->
+  <button class="collapsible">Worked Examples & Problem-Solving Steps</button>
   <div class="chapter-content">
     <ol>
       <li>
-        <b>Boyle’s Law Example:</b> A 2.0 L gas at 1.0 atm is compressed to 0.5 L. What is the new pressure?
+        <b>Boyle’s Law:</b> A 2.0 L gas at 1.0 atm is compressed to 0.5 L. What is new pressure?
         <details><summary>Solution</summary>
-          <div>P₁V₁ = P₂V₂ ⇒ (1.0 atm)(2.0 L) = P₂(0.5 L) ⇒ P₂ = 4.0 atm</div>
+          <div>P₁V₁ = P₂V₂ ⇒ (1.0)(2.0) = P₂(0.5) ⇒ P₂ = 4.0 atm</div>
         </details>
       </li>
       <li>
-        <b>Charles’ Law Example:</b> If 1.5 L of gas at 300 K is heated to 450 K at constant pressure, what’s the new volume?
+        <b>Charles’s Law:</b> If 1.5 L of gas at 300 K is heated to 450 K at constant P, new volume?
         <details><summary>Solution</summary>
-          <div>V₁/T₁ = V₂/T₂ ⇒ 1.5/300 = V₂/450 ⇒ V₂ = 2.25 L</div>
+          <div>V₂ = V₁ × (T₂/T₁) = 1.5 × (450/300) = 2.25 L</div>
         </details>
       </li>
       <li>
-        <b>Ideal Gas Law Example:</b> What volume does 3.0 mol O<sub>2</sub> occupy at 2 atm, 273 K?
+        <b>Ideal Gas Law:</b> What volume does 3.0 mol O₂ occupy at 2 atm, 273 K?
         <details><summary>Solution</summary>
-          <div>PV = nRT ⇒ V = nRT/P ⇒ V = (3.0)(0.0821)(273)/2 = 33.6 L</div>
+          <div>V = nRT/P = (3.0 × 0.0821 × 273) / 2 = 33.6 L</div>
         </details>
       </li>
       <li>
-        <b>Dalton’s Law Example:</b> A mixture has O<sub>2</sub> at 0.2 atm, N<sub>2</sub> at 0.7 atm, and CO<sub>2</sub> at 0.1 atm. What’s the total pressure?
+        <b>Dalton’s Law:</b> O₂ at 0.2 atm, N₂ at 0.7 atm, CO₂ at 0.1 atm. Total pressure?
         <details><summary>Solution</summary>
-          <div>P_total = 0.2 + 0.7 + 0.1 = 1.0 atm</div>
+          <div>0.2 + 0.7 + 0.1 = 1.0 atm</div>
         </details>
       </li>
       <li>
-        <b>Graham’s Law Example:</b> Which diffuses faster, H<sub>2</sub> or O<sub>2</sub>?
+        <b>Graham’s Law:</b> Which diffuses faster, H₂ or O₂?
         <details><summary>Solution</summary>
-          <div>Rate ratio = √(M_O2/M_H2) = √(32/2) = 4. H<sub>2</sub> diffuses 4x faster!</div>
+          <div>Rate ratio = √(32/2) = 4; H₂ diffuses 4x faster!</div>
         </details>
       </li>
     </ol>
   </div>
-
-  <button class="collapsible">Lab Skills & Measurement Tips</button>
+  
+  <!-- Molar Volume, Density of Gases -->
+  <button class="collapsible">Molar Volume, Density & Mass of Gases</button>
   <div class="chapter-content">
     <ul>
-      <li>Always use Kelvin for temperature in gas calculations.</li>
-      <li>Convert volumes to L, pressures to atm or kPa before plugging into equations.</li>
-      <li>Measure gas volume over water? Correct for water vapor pressure (P_gas = P_total - P_water).</li>
+      <li><b>Molar Volume:</b> At STP, 1 mol gas = 22.4 L.</li>
+      <li><b>Density of Gas (d):</b> d = PM/RT (M = molar mass)</li>
+      <li><b>Finding molar mass from gas data:</b> MM = dRT/P</li>
     </ul>
-    <details><summary>Practice: Water vapor correction</summary>
-      <div>If collected gas at 730 mmHg, and water vapor pressure is 30 mmHg, actual gas pressure = 700 mmHg.</div>
+    <details><summary>Example: Density of CO₂ at STP (M = 44 g/mol)</summary>
+      <div>d = (1 atm × 44 g/mol) / (0.0821 × 273 K) ≈ 1.96 g/L</div>
     </details>
   </div>
-
-  <button class="collapsible">Advanced Honors/AP Extensions</button>
+  
+  <!-- Real Gases & AP/Honors Extensions -->
+  <button class="collapsible">Real Gases & Honors/AP Extensions</button>
   <div class="chapter-content">
     <ul>
-      <li><b>van der Waals Equation:</b> Corrects for real gas behavior (<code>(P + a(n/V)²)(V-nb) = nRT</code>)</li>
-      <li>High P/low T: Real gases deviate from ideal (IMFs, particle volume).</li>
-      <li>Derivation of root mean square speed: <code>u_rms = √(3RT/M)</code> (M = molar mass in kg/mol)</li>
+      <li><b>Real Gases:</b> Deviate from ideal at high P, low T (particles have volume & IMFs)</li>
+      <li><b>van der Waals Equation:</b> (P + a(n/V)²)(V–nb) = nRT (corrects for non-ideality)</li>
+      <li><b>Root Mean Square Speed:</b> u<sub>rms</sub> = √(3RT/M)</li>
     </ul>
-    <details><summary>AP Example: What causes deviation from ideal gas behavior?</summary>
-      <div>IMFs (attraction between molecules) and non-negligible particle volume.</div>
+    <details><summary>Challenge: What causes real gases to deviate most?</summary>
+      <div>Strong IMFs and significant particle volume (esp. at high P, low T)</div>
     </details>
-    <details><summary>Challenge: Calculate the density of CO<sub>2</sub> at STP</summary>
-      <div>D = PM/RT. P=1 atm, M=44 g/mol, R=0.0821, T=273 K ⇒ D = (1*44)/(0.0821*273) ≈ 1.96 g/L</div>
+    <details><summary>Calculate u<sub>rms</sub> for He at 300K (M = 0.004 kg/mol)</summary>
+      <div>u<sub>rms</sub> = √(3×8.31×300/0.004) ≈ 1370 m/s</div>
     </details>
   </div>
-
-  <button class="collapsible">Common Misconceptions & Tips</button>
-  <div class="chapter-content">
-    <ul>
-      <li><b>Misconception:</b> Temperature in gas laws can be Celsius.<br>
-        <b>Correction:</b> Always use Kelvin (K = °C + 273).</li>
-      <li><b>Tip:</b> For gases at the same T and P, equal volumes mean equal moles (Avogadro’s Law).</li>
-      <li><b>Misconception:</b> Gases are ideal at all conditions.<br>
-        <b>Correction:</b> Only at high T, low P!</li>
-    </ul>
-  </div>
-
-  <button class="collapsible">Challenge Problems (With Hints & Answers)</button>
+  
+  <!-- Practice Problems -->
+  <button class="collapsible">Practice Problems (with Answers)</button>
   <div class="chapter-content">
     <ol>
       <li>
-        A 5.0 L flask contains 0.2 mol of N<sub>2</sub> at 27°C. What is the pressure?
-        <details><summary>Hint</summary><div>PV = nRT, T must be in K</div></details>
-        <details><summary>Answer</summary><div>T = 300 K; P = (0.2 × 0.0821 × 300) / 5.0 = 0.984 atm</div></details>
+        A 5.0 L flask contains 0.2 mol of N₂ at 27°C. What is the pressure?
+        <details><summary>Answer</summary>
+          <div>T = 300 K; P = (0.2 × 0.0821 × 300) / 5.0 = 0.984 atm</div>
+        </details>
       </li>
       <li>
-        If 3.00 L of a gas at 2.00 atm is expanded to 8.00 L at constant temperature, what’s the new pressure?
-        <details><summary>Hint</summary><div>Boyle’s Law</div></details>
-        <details><summary>Answer</summary><div>P₂ = P₁V₁/V₂ = 2 × 3 / 8 = 0.75 atm</div></details>
+        If 3.00 L of a gas at 2.00 atm is expanded to 8.00 L at constant temperature, what’s new pressure?
+        <details><summary>Answer</summary>
+          <div>P₂ = P₁V₁/V₂ = 2 × 3 / 8 = 0.75 atm</div>
+        </details>
       </li>
       <li>
-        Which gas effuses faster: methane (CH<sub>4</sub>, 16 g/mol) or sulfur hexafluoride (SF<sub>6</sub>, 146 g/mol)?
-        <details><summary>Hint</summary><div>Use Graham’s Law</div></details>
-        <details><summary>Answer</summary><div>CH₄ effuses about √(146/16) ≈ 3x faster than SF₆.</div></details>
+        Which gas effuses faster: methane (CH₄, 16 g/mol) or sulfur hexafluoride (SF₆, 146 g/mol)?
+        <details><summary>Answer</summary>
+          <div>CH₄ effuses about √(146/16) ≈ 3x faster</div>
+        </details>
+      </li>
+      <li>
+        What is the density of O₂ (MM = 32 g/mol) at 25°C and 1.5 atm?
+        <details><summary>Answer</summary>
+          <div>T = 298K; d = (1.5 × 32) / (0.0821 × 298) ≈ 1.96 g/L</div>
+        </details>
       </li>
     </ol>
   </div>
-
+  
+  <!-- Glossary (Essential Terms) -->
   <button class="collapsible">Glossary (Essential Terms)</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Gas:</b> State with indefinite shape and volume, compressible.</li>
-      <li><b>Pressure:</b> Force per unit area.</li>
-      <li><b>Volume:</b> Space gas occupies.</li>
-      <li><b>Temperature:</b> Average kinetic energy, must be in K.</li>
-      <li><b>Mole:</b> Amount of substance, 6.022 × 10²³ particles.</li>
-      <li><b>Partial pressure:</b> Pressure due to one gas in mixture.</li>
-      <li><b>Diffusion:</b> Spreading of gas throughout a space.</li>
-      <li><b>Effusion:</b> Movement through a small hole.</li>
+      <li><b>Gas:</b> State with indefinite shape and volume, compressible</li>
+      <li><b>Pressure:</b> Force per unit area</li>
+      <li><b>Volume:</b> Space gas occupies</li>
+      <li><b>Temperature:</b> Average kinetic energy, always use K</li>
+      <li><b>Mole:</b> Amount of substance, 6.022×10²³ particles</li>
+      <li><b>Molar Volume:</b> 22.4 L/mol at STP</li>
+      <li><b>Partial Pressure:</b> Pressure due to one gas in a mixture</li>
+      <li><b>Diffusion/Effusion:</b> Spread of gas (diffusion); passage through tiny hole (effusion)</li>
+      <li><b>Ideal Gas:</b> Follows PV=nRT at all T/P (real gases deviate)</li>
+      <li><b>STP:</b> Standard Temp (0°C/273 K) & Pressure (1 atm)</li>
     </ul>
   </div>
-
+  
+  <!-- Quiz: Self-Test -->
   <button class="collapsible">Quiz: Self-Test</button>
   <div class="chapter-content">
     <ol>
       <li>What is the value of R in L·atm/mol·K?</li>
       <li>What does STP stand for?</li>
       <li>How do you convert 25°C to Kelvin?</li>
-      <li>Which gas law describes the relation between V and T?</li>
+      <li>Which gas law describes relation between V and T?</li>
       <li>True or false: Gases can be compressed much more than solids or liquids.</li>
     </ol>
     <details><summary>Answers</summary>
@@ -1011,13 +981,12 @@ O=N-O<sup>–</sup>
         <li>0.0821</li>
         <li>Standard Temperature & Pressure</li>
         <li>25 + 273 = 298 K</li>
-        <li>Charles’ Law</li>
+        <li>Charles’s Law</li>
         <li>True</li>
       </ol>
     </details>
   </div>
 </div>
-
     <!-- Solutions & Molarity -->
    <div class="chapter" id="solutions">
   <h2>Solutions & Molarity</h2>
