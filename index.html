@@ -988,195 +988,219 @@ H–N–H
   </div>
 </div>
     <!-- Solutions & Molarity -->
-   <div class="chapter" id="solutions">
-  <h2>Solutions & Molarity</h2>
-
-  <button class="collapsible">Quick Overview</button>
+  <div class="chapter" id="solutions">
+  <h2>Solutions & Concentrations</h2>
+  
+  <!-- Solution Terminology & Branching Overview -->
+  <button class="collapsible">What is a Solution? (Branching Diagram)</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Solution:</b> Homogeneous mixture of two or more substances.</li>
-      <li><b>Solvent:</b> The substance that does the dissolving (major component; water in aqueous solutions).</li>
-      <li><b>Solute:</b> The substance being dissolved (minor component; salt in saltwater).</li>
-      <li><b>Types of Mixtures:</b> <b>Homogeneous</b> (uniform, solutions) vs. <b>Heterogeneous</b> (not uniform, e.g. sand and water).</li>
+      <li><b>Solution:</b> Homogeneous mixture of 2+ substances (e.g. salt water)</li>
+      <li><b>Solvent:</b> Substance doing the dissolving (major component, e.g. water in NaCl(aq))</li>
+      <li><b>Solute:</b> Substance dissolved (minor component, e.g. NaCl in NaCl(aq))</li>
+    </ul>
+    <pre style="background:#f3f4f6; padding:8px; border-radius:7px; font-size:1em;">
++------------------+
+|    Solution      |
++--------+---------+
+         |
+  +------+------+
+  |             |
+Solvent      Solute
+(water)     (salt, sugar, O2, etc)
+    </pre>
+    <ul>
+      <li><b>Saturated:</b> Max amount dissolved at given T/P (equilibrium with undissolved solute)</li>
+      <li><b>Unsaturated:</b> Less than max dissolved</li>
+      <li><b>Supersaturated:</b> More than max (unstable, crystals form easily)</li>
     </ul>
   </div>
-
-  <button class="collapsible">Table: Common Solution Terms</button>
+  
+  <!-- Types of Solutions & Common Terms Table -->
+  <button class="collapsible">Types of Solutions & Key Terms</button>
   <div class="chapter-content">
-    <table border="1" cellpadding="4" style="background:#f3f4f6;">
-      <tr><th>Term</th><th>Definition</th><th>Example</th></tr>
-      <tr><td>Solvent</td><td>Does the dissolving</td><td>Water</td></tr>
-      <tr><td>Solute</td><td>Gets dissolved</td><td>NaCl</td></tr>
-      <tr><td>Saturated</td><td>Maximum solute dissolved</td><td>Sweet tea with sugar at limit</td></tr>
-      <tr><td>Unsaturated</td><td>Less than maximum solute</td><td>Tea with less sugar</td></tr>
-      <tr><td>Supersaturated</td><td>More than maximum (unstable)</td><td>Rock candy solution</td></tr>
-      <tr><td>Electrolyte</td><td>Conducts when dissolved</td><td>NaCl(aq)</td></tr>
-      <tr><td>Nonelectrolyte</td><td>Does not conduct</td><td>Glucose(aq)</td></tr>
+    <table border="1" cellpadding="5" style="background:#f3f4f6;">
+      <tr><th>Type</th><th>Solute Phase</th><th>Solvent Phase</th><th>Example</th></tr>
+      <tr><td>Solid in liquid</td><td>Solid</td><td>Liquid</td><td>Sugar in water</td></tr>
+      <tr><td>Gas in liquid</td><td>Gas</td><td>Liquid</td><td>CO₂ in soda</td></tr>
+      <tr><td>Liquid in liquid</td><td>Liquid</td><td>Liquid</td><td>Alcohol in water</td></tr>
+      <tr><td>Solid in solid</td><td>Solid</td><td>Solid</td><td>Alloy (brass, bronze)</td></tr>
+      <tr><td>Gas in gas</td><td>Gas</td><td>Gas</td><td>Air</td></tr>
     </table>
+    <ul>
+      <li><b>Electrolyte:</b> Forms ions, conducts (NaCl, HCl)</li>
+      <li><b>Nonelectrolyte:</b> No ions, does not conduct (sugar)</li>
+    </ul>
   </div>
-
-  <button class="collapsible">In-Depth: Solubility & Factors Affecting It</button>
+  
+  <!-- Solubility Factors (Branching Table) -->
+  <button class="collapsible">Solubility: What Affects It?</button>
   <div class="chapter-content">
+    <pre style="background:#f3f4f6; padding:8px; border-radius:7px;">
+        Solubility
+            |
+    +-------+-------+
+    |               |
+Nature        Temperature
+of solute     (T) & Pressure (P)
+/solvent         |         |
+("Like          |         |
+dissolves      ↑T: ↑solids | ↑P: ↑gases
+like")         ↓T: ↑gases  |
+    |
+Surface area & stirring: ↑ rate, not amount
+    </pre>
     <ul>
       <li><b>“Like dissolves like”:</b> Polar dissolves polar, nonpolar dissolves nonpolar.</li>
-      <li><b>Temperature:</b> ↑T usually ↑solubility for solids, ↓solubility for gases.</li>
-      <li><b>Pressure (gases):</b> ↑P ↑solubility (Henry’s Law: <code>C = kP</code>)</li>
-      <li><b>Stirring & surface area:</b> ↑speed of dissolving (but not the amount at equilibrium)</li>
+      <li><b>Temp:</b> ↑T ↑solubility for solids; ↓T ↑solubility for gases.</li>
+      <li><b>Pressure:</b> ↑P ↑solubility for gases only (Henry’s Law: C = kP)</li>
+      <li><b>Stirring & surface area:</b> ↑rate of dissolving (but not amount at equilibrium)</li>
     </ul>
-    <details><summary>Example: Why does CO₂ stay dissolved in cold soda?</summary>
-      <div>Gas solubility is higher at low temperature and high pressure.</div>
+  </div>
+  
+  <!-- Concentration Units Graphic -->
+  <button class="collapsible">Concentration Units: Visual Branch</button>
+  <div class="chapter-content">
+    <pre style="background:#f3f4f6; padding:8px; border-radius:7px;">
+           Concentration
+                |
+   +------+------+--------+-------+--------+
+   |      |      |        |       |
+Molarity Molality %Mass %Vol Mole Fraction
+(M)      (m)    (w/w)  (v/v)      (X)
+    </pre>
+    <ul>
+      <li><b>Molarity (M):</b> mol solute / L solution</li>
+      <li><b>Molality (m):</b> mol solute / kg solvent (not common for water solutions)</li>
+      <li><b>% by Mass:</b> (g solute / g solution) × 100%</li>
+      <li><b>% by Volume:</b> (mL solute / mL solution) × 100%</li>
+      <li><b>Mole Fraction (X):</b> mol component / total mol</li>
+      <li><b>Dilution:</b> M₁V₁ = M₂V₂</li>
+    </ul>
+    <details><summary>Example: How many grams NaCl for 250 mL of 0.20 M NaCl?</summary>
+      <div>
+        0.20 mol/L × 0.250 L = 0.05 mol; 0.05 mol × 58.44 g/mol = 2.92 g NaCl
+      </div>
     </details>
   </div>
-
-  <button class="collapsible">Molarity, Molality, and Other Concentration Units</button>
+  
+  <!-- Dilution -->
+  <button class="collapsible">Dilution (M₁V₁ = M₂V₂)</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Molarity (M):</b> <code>M = mol solute / L solution</code></li>
-      <li><b>Molality (m):</b> <code>m = mol solute / kg solvent</code> (rare for aqueous chem)</li>
-      <li><b>Percent by Mass:</b> <code>mass solute / mass solution × 100</code></li>
-      <li><b>Percent by Volume:</b> <code>volume solute / volume solution × 100</code></li>
-      <li><b>Mole Fraction (X):</b> <code>X = mol component / total mol</code></li>
-      <li><b>Dilution:</b> <code>M₁V₁ = M₂V₂</code></li>
+      <li>Used to make a solution of lower concentration from a stock solution.</li>
+      <li>Units of volume must match!</li>
     </ul>
-    <details><summary>Example: How many moles in 250 mL of 2.0 M NaCl?</summary>
-      <div>n = M × V = 2.0 mol/L × 0.250 L = 0.50 mol</div>
-    </details>
-    <details><summary>AP: Why is molality used for boiling point elevation?</summary>
-      <div>Molality is temperature-independent (kg of solvent doesn't change with T, but solution volume can).</div>
+    <details><summary>Example: Make 100 mL of 1.0 M HCl from 12.0 M HCl</summary>
+      <div>
+        M₁V₁ = M₂V₂ ⇒ V₁ = (1.0 × 100) / 12.0 = 8.33 mL stock, dilute to 100 mL.
+      </div>
     </details>
   </div>
-
-  <button class="collapsible">Worked Examples & Step-by-Step Solutions</button>
+  
+  <!-- Colligative Properties (Branching) -->
+  <button class="collapsible">Colligative Properties (Branching)</button>
   <div class="chapter-content">
-    <ol>
-      <li>
-        <b>Molarity Example:</b> How would you prepare 500 mL of 0.2 M NaCl from solid NaCl (MM = 58.44 g/mol)?
-        <details><summary>Solution</summary>
-          <div>
-            <ul>
-              <li>moles NaCl = M × L = 0.2 × 0.5 = 0.1 mol</li>
-              <li>mass = 0.1 × 58.44 = 5.84 g</li>
-              <li>Dissolve 5.84 g NaCl, dilute to 500 mL.</li>
-            </ul>
-          </div>
-        </details>
-      </li>
-      <li>
-        <b>Dilution Example:</b> How much 12 M HCl is needed to make 250 mL of 1 M HCl?
-        <details><summary>Solution</summary>
-          <div>M₁V₁ = M₂V₂ ⇒ V₁ = (1)(0.25)/(12) = 0.021 L = 21 mL</div>
-        </details>
-      </li>
-      <li>
-        <b>Percent by Mass Example:</b> What is the % by mass of NaCl in a solution made by dissolving 10 g NaCl in 90 g water?
-        <details><summary>Solution</summary>
-          <div>% = 10/(10+90) × 100 = 10%</div>
-        </details>
-      </li>
-      <li>
-        <b>Mole Fraction Example:</b> What is the mole fraction of ethanol in a solution with 0.5 mol ethanol and 4.0 mol water?
-        <details><summary>Solution</summary>
-          <div>X_ethanol = 0.5 / (0.5 + 4.0) = 0.111</div>
-        </details>
-      </li>
-    </ol>
-  </div>
-
-  <button class="collapsible">Colligative Properties & Solution Effects</button>
-  <div class="chapter-content">
+    <pre style="background:#f3f4f6; padding:8px; border-radius:7px;">
+    Colligative Properties
+             |
+   +---------+----------+-----------+
+   |         |          |           |
+ Boiling   Freezing   Osmotic    Vapor
+ Point     Point      Pressure   Pressure
+ Elevation Depression  (π)       Lowering
+    </pre>
     <ul>
-      <li><b>Colligative Properties:</b> Depend only on # of particles, not type.</li>
-      <li>
-        <ul>
-          <li><b>Boiling Point Elevation:</b> <code>ΔT_b = iK_b m</code></li>
-          <li><b>Freezing Point Depression:</b> <code>ΔT_f = iK_f m</code></li>
-          <li><b>Osmotic Pressure:</b> <code>π = iMRT</code></li>
-        </ul>
-      </li>
-      <li><b>i:</b> van’t Hoff factor (NaCl = 2, CaCl₂ = 3, glucose = 1)</li>
+      <li><b>Boiling Point Elevation:</b> ΔT<sub>b</sub> = iK<sub>b</sub>m</li>
+      <li><b>Freezing Point Depression:</b> ΔT<sub>f</sub> = iK<sub>f</sub>m</li>
+      <li><b>Osmotic Pressure:</b> π = iMRT</li>
+      <li><b>i = van't Hoff factor</b> (NaCl = 2, CaCl₂ = 3, glucose = 1)</li>
+      <li>Properties depend on <b>number</b> of particles, not their identity.</li>
     </ul>
-    <details><summary>Example: Which has the greater freezing point depression: 1 m NaCl or 1 m glucose?</summary>
-      <div>1 m NaCl (dissociates into 2 ions, i=2, glucose doesn’t dissociate, i=1)</div>
+    <details><summary>Example: Which has greater ΔT<sub>f</sub>, 1 m NaCl or 1 m glucose?</summary>
+      <div>NaCl: i = 2, so greater freezing point depression than glucose (i = 1)</div>
     </details>
   </div>
-
+  
+  <!-- Electrolytes & Conductivity -->
   <button class="collapsible">Electrolytes & Conductivity</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Electrolyte:</b> Substance that conducts electricity when dissolved (forms ions, e.g. salts, acids, bases).</li>
-      <li><b>Strong Electrolyte:</b> Completely dissociates (NaCl, HCl).</li>
-      <li><b>Weak Electrolyte:</b> Partially dissociates (acetic acid, ammonia).</li>
-      <li><b>Nonelectrolyte:</b> Does not conduct (sugar, alcohols).</li>
+      <li><b>Electrolyte:</b> Conducts electricity when dissolved or molten (NaCl, HCl, KOH).</li>
+      <li><b>Strong:</b> Complete ionization/dissociation</li>
+      <li><b>Weak:</b> Partial ionization (acetic acid, NH₃)</li>
+      <li><b>Nonelectrolyte:</b> No ions (sugar, alcohol)</li>
     </ul>
-    <details><summary>AP Example: Why do weak acids/bases conduct weakly?</summary>
-      <div>They only partially ionize; most molecules remain intact.</div>
+    <details><summary>Why do weak acids/bases conduct weakly?</summary>
+      <div>Only a small fraction forms ions, most molecules remain intact.</div>
     </details>
   </div>
-
-  <button class="collapsible">Advanced Honors/AP Extensions</button>
+  
+  <!-- Henry’s Law, Raoult’s Law, Saturation -->
+  <button class="collapsible">Henry’s Law, Raoult’s Law, Saturation</button>
   <div class="chapter-content">
     <ul>
-      <li><b>Henry’s Law:</b> Gas solubility in liquid ∝ pressure of gas above liquid (<code>C = kP</code>)</li>
-      <li><b>Raoult’s Law:</b> Vapor pressure of solution <code>P = X_solvent × P°_solvent</code></li>
-      <li><b>Ideal Solution:</b> Obeys Raoult’s law; non-ideal if strong/weak solute-solvent IMFs.</li>
+      <li><b>Henry’s Law:</b> Gas solubility ∝ partial pressure above liquid (<code>C = kP</code>)</li>
+      <li><b>Raoult’s Law:</b> Vapor pressure of solution <code>P = X<sub>solvent</sub> × P<sup>0</sup><sub>solvent</sub></code></li>
+      <li><b>Saturation:</b> Equilibrium between dissolved and undissolved solute</li>
     </ul>
-    <details><summary>Challenge: Calculate boiling point of 2 m NaCl solution (K<sub>b</sub>=0.512°C/m, i=2)</summary>
-      <div>ΔT_b = iK_b m = 2×0.512×2 = 2.048°C (boils at 102.05°C)</div>
+    <details><summary>Example: Why does CO₂ stay dissolved in sealed soda?</summary>
+      <div>High pressure of CO₂ above the liquid (Henry’s Law).</div>
+    </details>
+    <details><summary>How does adding salt affect boiling point?</summary>
+      <div>Raises boiling point (colligative property).</div>
     </details>
   </div>
-
-  <button class="collapsible">Common Misconceptions & Tips</button>
-  <div class="chapter-content">
-    <ul>
-      <li><b>Misconception:</b> The solvent is always water.<br>
-        <b>Correction:</b> Water is common (“aqueous”), but solvents can be any liquid (alcohol, benzene, etc.)</li>
-      <li><b>Tip:</b> Molarity = mol/L of solution, not solvent.</li>
-      <li><b>Misconception:</b> Adding solute always increases solubility.<br>
-        <b>Correction:</b> A saturated solution can’t dissolve more at that T/P.</li>
-    </ul>
-  </div>
-
-  <button class="collapsible">Challenge Problems (With Hints & Answers)</button>
+  
+  <!-- Practice & Worked Problems -->
+  <button class="collapsible">Practice Problems & Solutions</button>
   <div class="chapter-content">
     <ol>
       <li>
-        How much KNO₃ (MM = 101.1 g/mol) is needed to make 750 mL of 0.10 M KNO₃ solution?
-        <details><summary>Hint</summary><div>Find moles, then grams.</div></details>
-        <details><summary>Answer</summary><div>n = 0.10 × 0.75 = 0.075 mol; mass = 0.075 × 101.1 = 7.58 g</div></details>
+        How many grams of KNO₃ (MM = 101.1 g/mol) needed to make 750 mL of 0.10 M KNO₃?
+        <details><summary>Solution</summary><div>0.10 × 0.75 = 0.075 mol; 0.075 × 101.1 = 7.58 g</div></details>
       </li>
       <li>
-        What is the molarity of a solution made by dissolving 10 g NaOH (MM = 40.0 g/mol) in enough water to make 500 mL?
-        <details><summary>Hint</summary><div>Moles = mass/MM; M = mol/L</div></details>
-        <details><summary>Answer</summary><div>n = 10/40 = 0.25 mol; M = 0.25/0.5 = 0.50 M</div></details>
+        What is the % by mass of NaCl in a solution of 10 g NaCl + 90 g water?
+        <details><summary>Solution</summary><div>10/(10+90) × 100 = 10%</div></details>
       </li>
       <li>
-        If 40 mL of 6.0 M HCl is diluted to 500 mL, what’s the new molarity?
-        <details><summary>Hint</summary><div>M₁V₁ = M₂V₂</div></details>
-        <details><summary>Answer</summary><div>M₂ = (6×40)/500 = 0.48 M</div></details>
+        A solution contains 0.50 mol ethanol and 4.0 mol water. What is mole fraction of ethanol?
+        <details><summary>Solution</summary><div>0.5/(0.5+4) = 0.111</div></details>
       </li>
       <li>
-        If 5 g of salt is added to 100 g of water, what is the percent by mass?
-        <details><summary>Hint</summary><div>Total mass = 5 + 100</div></details>
-        <details><summary>Answer</summary><div>5/(5+100) × 100 = 4.76%</div></details>
+        How much 12 M HCl is needed to make 250 mL of 1 M HCl?
+        <details><summary>Solution</summary><div>M₁V₁ = M₂V₂ ⇒ V₁ = (1×0.25)/12 = 0.0208 L = 20.8 mL</div></details>
+      </li>
+      <li>
+        Which will lower freezing point more: 1 m CaCl₂ or 1 m NaCl?
+        <details><summary>Solution</summary><div>CaCl₂: i = 3, NaCl: i = 2, so CaCl₂ lowers it more.</div></details>
       </li>
     </ol>
   </div>
-
+  
+  <!-- Glossary (Essential Terms) -->
   <button class="collapsible">Glossary (Essential Terms)</button>
   <div class="chapter-content">
     <ul>
       <li><b>Solution:</b> Homogeneous mixture</li>
-      <li><b>Solvent:</b> Dissolves solute</li>
-      <li><b>Solute:</b> Dissolved substance</li>
-      <li><b>Molarity:</b> mol solute/L solution</li>
-      <li><b>Molality:</b> mol solute/kg solvent</li>
-      <li><b>Colligative property:</b> Depends on # particles</li>
-      <li><b>Electrolyte:</b> Conducts when dissolved</li>
+      <li><b>Solvent:</b> Does the dissolving</li>
+      <li><b>Solute:</b> Gets dissolved</li>
+      <li><b>Molarity (M):</b> mol/L solution</li>
+      <li><b>Molality (m):</b> mol/kg solvent</li>
+      <li><b>Colligative Property:</b> Depends only on # particles</li>
+      <li><b>Electrolyte:</b> Conducts electricity (forms ions)</li>
       <li><b>Dilution:</b> Lowering concentration by adding solvent</li>
-      <li><b>Henry’s Law:</b> Solubility ∝ pressure</li>
+      <li><b>Henry’s Law:</b> Gas solubility ∝ pressure</li>
+      <li><b>Saturated/Unsaturated/Supersaturated:</b> Degree of solute in solution</li>
+      <li><b>Mole Fraction:</b> Ratio of component’s moles to total moles</li>
+      <li><b>Percent by Mass:</b> g solute / g solution × 100%</li>
+      <li><b>Percent by Volume:</b> mL solute / mL solution × 100%</li>
+      <li><b>Raoult’s Law:</b> Vapor pressure lowering by solute</li>
     </ul>
   </div>
-
+  
+  <!-- Quiz: Self-Test -->
   <button class="collapsible">Quiz: Self-Test</button>
   <div class="chapter-content">
     <ol>
@@ -1192,7 +1216,7 @@ H–N–H
         <li>Water</li>
         <li>Use M₁V₁ = M₂V₂ ⇒ V₁ = (1×0.1)/12 = 8.3 mL</li>
         <li>NaCl (forms ions)</li>
-        <li>False (molality is based on mass, not volume)</li>
+        <li>False (molality is mass-based, not volume-based)</li>
       </ol>
     </details>
   </div>
