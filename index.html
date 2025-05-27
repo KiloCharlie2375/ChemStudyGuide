@@ -48,7 +48,7 @@
     <li><a href="#acids">Acids, Bases & pH</a></li>
     <li><a href="#redox">Oxidation-Reduction (Redox)</a></li>
     <li><a href="#review">Comprehensive Review</a></li>
-    <li><a href="#glossary">Glossary & Essential Terms</a></li>
+
   </ul>
 </nav>
   <div class="content">
@@ -2000,22 +2000,49 @@ Oxidizing Agent     Reducing Agent
 <script>
   // Collapsible sections
   const coll = document.querySelectorAll(".collapsible");
-  coll.forEach(btn => {
-    btn.addEventListener("click", function () {
-      this.classList.toggle("active");
-      let content = this.nextElementSibling;
-      if (content.style.maxHeight) content.style.maxHeight = null;
-      else content.style.maxHeight = content.scrollHeight + "px";
-    });
+// Initial collapse for all on load
+coll.forEach(btn => {
+  let content = btn.nextElementSibling;
+  content.style.maxHeight = null;
+  btn.classList.remove("active");
+});
+// Then attach click listeners
+coll.forEach(btn => {
+  btn.addEventListener("click", function () {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight) content.style.maxHeight = null;
+    else content.style.maxHeight = content.scrollHeight + "px";
   });
+});
   // Search/filter function
   document.getElementById('searchInput').addEventListener('input', function () {
-    const searchVal = this.value.toLowerCase();
-    document.querySelectorAll('.chapter').forEach(chap => {
-      if (chap.innerText.toLowerCase().includes(searchVal)) chap.style.display = "";
-      else chap.style.display = "none";
+  const searchVal = this.value.toLowerCase();
+  document.querySelectorAll('.chapter').forEach(chap => {
+    // Collapse all first
+    chap.style.display = "none";
+    let found = false;
+    // Check all collapsible blocks inside
+    chap.querySelectorAll('.chapter-content').forEach(sec => {
+      if (sec.innerText.toLowerCase().includes(searchVal)) found = true;
     });
+    if (chap.innerText.toLowerCase().includes(searchVal) || found) {
+      chap.style.display = "";
+      // Optionally auto-expand all collapsibles in matching chapters:
+      chap.querySelectorAll('.collapsible').forEach(btn => {
+        let content = btn.nextElementSibling;
+        if (searchVal && content.innerText.toLowerCase().includes(searchVal)) {
+          btn.classList.add("active");
+          content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+          btn.classList.remove("active");
+          content.style.maxHeight = null;
+        }
+      });
+    }
   });
+});
+
 </script>
 </body>
 </html>
