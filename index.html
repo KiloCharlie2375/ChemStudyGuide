@@ -402,24 +402,256 @@ Homogeneous  Heterogeneous
 </div>
 
     <!-- Bonding & Structure -->
-    <div class="chapter" id="bonding">
-      <h2>Bonding & Structure</h2>
-      <button class="collapsible">Types, Models, & Polarity</button>
-      <div class="chapter-content">
+   <div class="chapter" id="bonding">
+  <h2>Bonding & Structure</h2>
+
+  <button class="collapsible">Quick Overview</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Chemical Bond:</b> The attractive force holding atoms or ions together in compounds.</li>
+      <li><b>Main Types:</b> Ionic (transfer), Covalent (sharing), Metallic (“sea of electrons”).</li>
+      <li><b>Lewis Dot Structures:</b> Diagrams showing valence electrons and bonding.</li>
+      <li><b>VSEPR Theory:</b> Valence Shell Electron Pair Repulsion — predicts molecular shapes.</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Table: Types of Chemical Bonds</button>
+  <div class="chapter-content">
+    <table border="1" cellpadding="4" style="background:#f3f4f6;">
+      <tr><th>Bond Type</th><th>How Formed</th><th>Properties</th><th>Example</th></tr>
+      <tr>
+        <td>Ionic</td>
+        <td>Transfer of electrons (metal + nonmetal)</td>
+        <td>High mp/bp, conducts when molten/aq, crystalline</td>
+        <td>NaCl, MgO</td>
+      </tr>
+      <tr>
+        <td>Covalent</td>
+        <td>Sharing of electrons (nonmetal + nonmetal)</td>
+        <td>Low mp/bp, not conductive, discrete molecules</td>
+        <td>H<sub>2</sub>O, CO<sub>2</sub></td>
+      </tr>
+      <tr>
+        <td>Metallic</td>
+        <td>“Sea of electrons” around positive ions (metal + metal)</td>
+        <td>Conducts, malleable, ductile</td>
+        <td>Fe, Cu, Al</td>
+      </tr>
+    </table>
+  </div>
+
+  <button class="collapsible">In-Depth: Ionic Bonding</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Ions:</b> Atoms/molecules with a net charge (cation = +, anion = –).</li>
+      <li><b>Ionic Compounds:</b> Usually crystalline solids, formula unit shows lowest ratio.</li>
+      <li><b>Properties:</b>
         <ul>
-          <li><b>Ionic Bonds:</b> transfer of electrons, cations (+) & anions (–), lattice, high mp/bp, conduct when molten</li>
-          <li><b>Covalent Bonds:</b> sharing electrons, nonmetals, single/double/triple, VSEPR, polar/nonpolar, resonance</li>
-          <li><b>Metallic Bonds:</b> "sea of electrons", conductivity, malleability</li>
-          <li><b>Alloys:</b> substitutional/interstitial, improved properties</li>
-          <li><b>Lewis Structures:</b> show valence e–, obey octet rule (exceptions: H, B, S, P...)</li>
-          <li><b>Polarity:</b> ∆EN: nonpolar (0–0.2), polar covalent (0.3–1.7), ionic (>1.7)</li>
-          <li><b>IMFs:</b> Dispersion < Dipole-dipole < Hydrogen bonding (N, O, F)</li>
+          <li>High melting/boiling points</li>
+          <li>Conduct electricity when molten or in solution</li>
+          <li>Brittle, not malleable</li>
         </ul>
-        <details><summary>Example: Why is H₂O polar but CO₂ is nonpolar?</summary>
-          <div>H₂O: bent (net dipole), CO₂: linear (dipoles cancel).</div>
-        </details>
+      </li>
+      <li><b>Electrostatic Forces:</b> Strong attractions between oppositely charged ions.</li>
+    </ul>
+    <details><summary>Example: Why is NaCl solid at room temperature?</summary>
+      <div>Strong ionic bonds require lots of energy to break.</div>
+    </details>
+    <details><summary>Visual: Lattice Structure</summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+Na<sup>+</sup>  Cl<sup>-</sup>  Na<sup>+</sup>  Cl<sup>-</sup>
+Cl<sup>-</sup>  Na<sup>+</sup>  Cl<sup>-</sup>  Na<sup>+</sup>
+        </pre>
       </div>
-    </div>
+    </details>
+  </div>
+
+  <button class="collapsible">In-Depth: Covalent Bonding</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Molecular Compounds:</b> Formed from nonmetals sharing electrons.</li>
+      <li><b>Bond Types:</b>
+        <ul>
+          <li>Single: 1 pair shared (H–H)</li>
+          <li>Double: 2 pairs shared (O=O)</li>
+          <li>Triple: 3 pairs shared (N≡N)</li>
+        </ul>
+      </li>
+      <li><b>Lone Pairs:</b> Pairs of electrons not involved in bonding, affect shape (VSEPR).</li>
+      <li><b>Properties:</b>
+        <ul>
+          <li>Low melting/boiling points</li>
+          <li>Poor conductors</li>
+          <li>May exist as gas, liquid, or solid</li>
+        </ul>
+      </li>
+    </ul>
+    <details><summary>Visual: Covalent Bond Example (H<sub>2</sub>O)</summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+H:O:H
+ (bent geometry)
+        </pre>
+      </div>
+    </details>
+    <details><summary>Q: Why does CO<sub>2</sub> have a linear shape?</summary>
+      <div>No lone pairs on central atom, so O=C=O is linear (VSEPR).</div>
+    </details>
+  </div>
+
+  <button class="collapsible">In-Depth: Metallic Bonding</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Metallic Bonds:</b> Metal cations surrounded by a “sea” of delocalized electrons.</li>
+      <li><b>Properties:</b>
+        <ul>
+          <li>Conduct electricity & heat</li>
+          <li>Malleable (bendable), ductile (drawn into wire)</li>
+          <li>Shiny (luster)</li>
+        </ul>
+      </li>
+      <li><b>Alloys:</b> Mixtures of metals (brass = Cu + Zn, steel = Fe + C)</li>
+    </ul>
+    <details><summary>Q: Why are metals good conductors?</summary>
+      <div>Free electrons can move and carry current/energy.</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Polarity, Electronegativity, & IMFs</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Electronegativity:</b> Ability of atom to attract e– in a bond (F = highest, Fr = lowest)</li>
+      <li><b>Bond Polarity:</b>
+        <ul>
+          <li>Nonpolar covalent: ∆EN 0–0.2</li>
+          <li>Polar covalent: ∆EN 0.3–1.7</li>
+          <li>Ionic: ∆EN > 1.7</li>
+        </ul>
+      </li>
+      <li><b>Molecular Polarity:</b> Determined by shape and bond polarity (symmetry = nonpolar, asymmetry = polar)</li>
+      <li><b>Intermolecular Forces:</b>
+        <ul>
+          <li>Dispersion (all molecules)</li>
+          <li>Dipole-dipole (polar molecules)</li>
+          <li>Hydrogen bonding (H with N, O, F)</li>
+        </ul>
+      </li>
+    </ul>
+    <details><summary>Practice: Why is H<sub>2</sub>O a liquid at room temp, but H<sub>2</sub> is a gas?</summary>
+      <div>Strong hydrogen bonds in H<sub>2</sub>O raise boiling point.</div>
+    </details>
+    <details><summary>Q: Draw the Lewis structure for NH<sub>3</sub> (ammonia).</summary>
+      <div>
+        <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+  H
+  |
+H-N-H
+  ..
+(lone pair)
+        </pre>
+      </div>
+    </details>
+  </div>
+
+  <button class="collapsible">VSEPR Theory: Molecular Shapes</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>VSEPR:</b> Electron pairs repel, so molecules adopt shapes to minimize repulsion.</li>
+      <li><b>Common Shapes:</b>
+        <ul>
+          <li>Linear (CO<sub>2</sub>): 180°</li>
+          <li>Bent (H<sub>2</sub>O): <130°</li>
+          <li>Trigonal planar (BF<sub>3</sub>): 120°</li>
+          <li>Tetrahedral (CH<sub>4</sub>): 109.5°</li>
+          <li>Pyramidal (NH<sub>3</sub>): <109.5°</li>
+        </ul>
+      </li>
+    </ul>
+    <details><summary>Mnemonic: "Lone pairs push harder!"</summary>
+      <div>Extra lone pairs compress bond angles.</div>
+    </details>
+    <details><summary>Q: Which shape does SO<sub>2</sub> have?</summary>
+      <div>Bent (lone pair on S, like O₃ or H₂O).</div>
+    </details>
+  </div>
+
+  <button class="collapsible">Common Misconceptions & Tips</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Misconception:</b> Ionic compounds always dissolve in water.<br>
+        <b>Correction:</b> Some are insoluble (ex: AgCl, BaSO₄).</li>
+      <li><b>Tip:</b> Use electronegativity differences and VSEPR to determine polarity.</li>
+      <li><b>Misconception:</b> Lone pairs are always on outer atoms.<br>
+        <b>Correction:</b> They’re often on central atoms!</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Challenge Problems (With Hints & Answers)</button>
+  <div class="chapter-content">
+    <ol>
+      <li>
+        What is the shape and polarity of CF<sub>4</sub>?
+        <details><summary>Hint</summary><div>4 F atoms around central C; all bonds same.</div></details>
+        <details><summary>Answer</summary><div>Tetrahedral, nonpolar (symmetrical, dipoles cancel).</div></details>
+      </li>
+      <li>
+        Which has the higher melting point, NaCl or H<sub>2</sub>O?
+        <details><summary>Hint</summary><div>Think about bond strength and type.</div></details>
+        <details><summary>Answer</summary><div>NaCl (ionic, much stronger bonds).</div></details>
+      </li>
+      <li>
+        Draw a Lewis structure for NO<sub>3</sub><sup>–</sup>.
+        <details><summary>Hint</summary><div>Remember to add an electron for the charge.</div></details>
+        <details><summary>Answer</summary>
+          <div>
+            <pre style="background:#e0e7ef; padding:5px; border-radius:6px;">
+O=N-O<sup>–</sup>
+ ||
+ O
+(resonance, one O has negative charge)
+            </pre>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </div>
+
+  <button class="collapsible">Glossary (Essential Terms)</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Bond:</b> Attractive force holding atoms together</li>
+      <li><b>Ionic Bond:</b> Transfer of electrons, forms ions</li>
+      <li><b>Covalent Bond:</b> Sharing electrons</li>
+      <li><b>Metallic Bond:</b> Delocalized electrons in metals</li>
+      <li><b>Lewis Structure:</b> Diagram of valence electrons</li>
+      <li><b>VSEPR:</b> Model for predicting molecule shape</li>
+      <li><b>Intermolecular Forces (IMFs):</b> Attractions between molecules</li>
+      <li><b>Electronegativity:</b> Atom’s ability to attract electrons</li>
+      <li><b>Polarity:</b> Unequal sharing of electrons</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Quiz: Self-Test</button>
+  <div class="chapter-content">
+    <ol>
+      <li>Which is the best example of a metallic bond: Cu, CO<sub>2</sub>, NaCl, H<sub>2</sub>O?</li>
+      <li>What shape does methane (CH<sub>4</sub>) have?</li>
+      <li>How many electrons are shared in a double bond?</li>
+      <li>Which molecule has hydrogen bonding: NH<sub>3</sub>, CCl<sub>4</sub>, CH<sub>4</sub>, CO<sub>2</sub>?</li>
+      <li>Is O<sub>2</sub> nonpolar or polar?</li>
+    </ol>
+    <details><summary>Answers</summary>
+      <ol>
+        <li>Cu (copper, metallic bond)</li>
+        <li>Tetrahedral</li>
+        <li>4 electrons (2 pairs)</li>
+        <li>NH<sub>3</sub></li>
+        <li>Nonpolar (same element, no EN difference)</li>
+      </ol>
+    </details>
+  </div>
+</div>
 
     <!-- Gases & Gas Laws -->
     <div class="chapter" id="gases">
