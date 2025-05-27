@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-AP Chemistry Reference</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; font-family:Segoe UI,Arial,sans-serif; background:#f8fafc; color:#222;}
+    .main-container { display:flex; max-width:1200px; margin:0 auto; min-height:100vh;}
+    nav { background: #222; color:#fff; min-width:230px; padding:24px 0; }
+    nav h2 { text-align:center; font-size:1.2rem; margin-bottom:16px;}
+    nav ul { list-style:none; padding:0;}
+    nav ul li { margin:9px 0;}
+    nav ul li a { color: #e0e7ef; text-decoration:none; padding:8px 18px; display:block; border-radius:8px;}
+    nav ul li a:hover, nav ul li.active a { background: #2563eb; color: #fff;}
+    .content { flex:1; padding:38px 28px 30px 32px;}
+    .chapter { margin-bottom:42px;}
+    .chapter h2 { font-size:1.25rem; margin-bottom:8px; color: #2563eb;}
+    .collapsible { background:#e0e7ef; color:#111; cursor:pointer; padding:13px 20px; width:100%; border:none; text-align:left; font-size:1.06rem; border-radius:8px; margin-bottom:7px; font-weight:600;}
+    .active, .collapsible:hover { background: #bfdbfe;}
+    .chapter-content { padding:10px 22px; max-height:0; overflow:hidden; background:#f1f5f9; border-radius:0 0 10px 10px; transition:max-height 0.36s;}
+    ul,ol { margin:8px 0 8px 15px;}
+    code,.mono { font-family:Consolas,monospace; background:#f3f4f6; padding:2px 5px; border-radius:4px;}
+    .searchbox { margin-bottom:32px; width:100%; }
+    .searchbox input { width:100%; padding:12px; font-size:1rem; border-radius:8px; border:1px solid #ccc;}
+    details summary { cursor:pointer; font-weight:500; margin:6px 0;}
+    details[open] summary { color:#2563eb; }
+    @media (max-width:900px) {
+      .main-container { flex-direction:column;}
+      nav { min-width:0; width:100%; padding:10px 0;}
+      .content { padding:15px 3vw;}
+    }
+  </style>
+</head>
+<body>
+<div class="main-container">
+  <nav>
+    <h2>Chemistry Chapters</h2>
+    <ul>
+      <li><a href="#matter">Matter & Measurement</a></li>
+      <li><a href="#atoms">Atoms & The Periodic Table</a></li>
+      <li><a href="#bonding">Bonding & Structure</a></li>
+      <li><a href="#gases">Gases & Gas Laws</a></li>
+      <li><a href="#solutions">Solutions & Molarity</a></li>
+      <li><a href="#stoich">Stoichiometry</a></li>
+      <li><a href="#equilibrium">Equilibrium & Kinetics</a></li>
+      <li><a href="#acids">Acids, Bases & pH</a></li>
+      <li><a href="#review">Comprehensive Review</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="searchbox">
+      <input type="text" id="searchInput" placeholder="Type to filter topics or formulas...">
+    </div>
+
+    <!-- Matter & Measurement -->
+    <div class="chapter" id="matter">
+      <h2>Matter & Measurement</h2>
+      <button class="collapsible">Summary, Key Points & Formulas</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Matter:</b> anything with mass and volume</li>
+          <li><b>Physical/chemical properties, states, changes:</b> (solid, liquid, gas, vapor), extensive vs. intensive</li>
+          <li><b>Mixtures:</b> Homogeneous (solutions) vs. Heterogeneous</li>
+          <li><b>Separation Techniques:</b> Filtration, Distillation, Chromatography</li>
+          <li><b>Scientific Method, Data:</b> Quantitative vs Qualitative, accuracy vs. precision</li>
+          <li><b>Unit Conversions:</b> Metric prefixes (kilo-, centi-, milli- etc.)</li>
+          <li><b>Temperature:</b> <code>K = °C + 273.15</code></li>
+          <li><b>Percent by Mass:</b> <code>mass element/mass compound × 100</code></li>
+        </ul>
+        <details><summary>Practice Q: Intensive vs Extensive?</summary>
+          <div><b>Extensive</b>: depends on amount (mass, volume). <b>Intensive</b>: independent (density, boiling point).</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Atoms & The Periodic Table -->
+    <div class="chapter" id="atoms">
+      <h2>Atoms & The Periodic Table</h2>
+      <button class="collapsible">Concepts, Trends & Highlights</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Atomic Structure:</b> protons (+), neutrons (0), electrons (–)</li>
+          <li><b>Periodic Table:</b> arranged by atomic number (Moseley), groups = columns, periods = rows</li>
+          <li><b>Metals, Nonmetals, Metalloids:</b> location, typical properties</li>
+          <li><b>Periodic Trends:</b>
+            <ul>
+              <li><b>Atomic radius:</b> increases ↓, decreases →</li>
+              <li><b>Ionization energy:</b> decreases ↓, increases →</li>
+              <li><b>Electronegativity:</b> decreases ↓, increases →</li>
+              <li><b>Electron Affinity:</b> generally more negative →, less negative ↓</li>
+            </ul>
+          </li>
+          <li><b>Groups:</b>
+            <ul>
+              <li>1A: Alkali metals (+1)</li>
+              <li>2A: Alkaline earth metals (+2)</li>
+              <li>7A: Halogens (–1)</li>
+              <li>8A: Noble gases (0)</li>
+              <li>Transition: variable charges (exceptions: Zn +2, Ag +1)</li>
+            </ul>
+          </li>
+        </ul>
+        <details><summary>Q: Why does atomic radius decrease across a period?</summary>
+          <div>Increased nuclear charge pulls electrons closer.</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Bonding & Structure -->
+    <div class="chapter" id="bonding">
+      <h2>Bonding & Structure</h2>
+      <button class="collapsible">Types, Models, & Polarity</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Ionic Bonds:</b> transfer of electrons, cations (+) & anions (–), lattice, high mp/bp, conduct when molten</li>
+          <li><b>Covalent Bonds:</b> sharing electrons, nonmetals, single/double/triple, VSEPR, polar/nonpolar, resonance</li>
+          <li><b>Metallic Bonds:</b> "sea of electrons", conductivity, malleability</li>
+          <li><b>Alloys:</b> substitutional/interstitial, improved properties</li>
+          <li><b>Lewis Structures:</b> show valence e–, obey octet rule (exceptions: H, B, S, P...)</li>
+          <li><b>Polarity:</b> ∆EN: nonpolar (0–0.2), polar covalent (0.3–1.7), ionic (>1.7)</li>
+          <li><b>IMFs:</b> Dispersion < Dipole-dipole < Hydrogen bonding (N, O, F)</li>
+        </ul>
+        <details><summary>Example: Why is H₂O polar but CO₂ is nonpolar?</summary>
+          <div>H₂O: bent (net dipole), CO₂: linear (dipoles cancel).</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Gases & Gas Laws -->
+    <div class="chapter" id="gases">
+      <h2>Gases & Gas Laws</h2>
+      <button class="collapsible">Laws, Theories, & Sample Problems</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Kinetic Molecular Theory:</b> particles in constant, random motion; negligible volume; elastic collisions</li>
+          <li><b>Gas Laws:</b>
+            <ul>
+              <li>Boyle’s: <code>P₁V₁=P₂V₂</code></li>
+              <li>Charles’: <code>V₁/T₁=V₂/T₂</code></li>
+              <li>Gay-Lussac’s: <code>P₁/T₁=P₂/T₂</code></li>
+              <li>Avogadro’s: <code>V₁/n₁=V₂/n₂</code> (at same T & P)</li>
+              <li>Ideal Gas: <code>PV=nRT</code> (R=0.0821 L·atm/mol·K)</li>
+              <li>Combined Gas: <code>P₁V₁/T₁=P₂V₂/T₂</code></li>
+              <li>Dalton’s Law: <code>P_total = P₁ + P₂ + ...</code></li>
+            </ul>
+          </li>
+          <li><b>STP:</b> 0°C, 1 atm, 1 mol gas = 22.4L</li>
+          <li><b>Real vs Ideal Gases:</b> real gases deviate at low T, high P</li>
+          <li><b>Gas Pressure Units:</b> 1 atm = 101.3 kPa = 760 mmHg = 14.7 psi</li>
+        </ul>
+        <details><summary>Sample: Find volume of 2 mol O₂ at 27°C, 2 atm.</summary>
+          <div>V = nRT/P = (2)(0.0821)(300)/2 ≈ 24.6 L</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Solutions & Molarity -->
+    <div class="chapter" id="solutions">
+      <h2>Solutions & Molarity</h2>
+      <button class="collapsible">Concepts, Math & Examples</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Solutions:</b> homogeneous mixtures, solute dissolved in solvent</li>
+          <li><b>Molarity (M):</b> <code>mol/L</code></li>
+          <li><b>Molality (m):</b> <code>mol/kg solvent</code></li>
+          <li><b>Dilutions:</b> <code>M₁V₁=M₂V₂</code></li>
+          <li><b>Percent by mass:</b> <code>(g solute/g solution) × 100</code></li>
+          <li><b>Colligative Properties:</b> bp elevation <code>ΔT_b = iK_b m</code>, fp depression <code>ΔT_f = iK_f m</code></li>
+          <li><b>Henry's Law:</b> solubility of gas ∝ pressure</li>
+        </ul>
+        <details><summary>Practice: How much 12M HCl to make 500 mL of 2M HCl?</summary>
+          <div>V₁ = (2)(0.5)/(12) = 0.083 L = 83 mL</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Stoichiometry -->
+    <div class="chapter" id="stoich">
+      <h2>Stoichiometry</h2>
+      <button class="collapsible">Conversions & Limiting Reactants</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Mole conversions:</b> mass ↔ moles ↔ particles ↔ volume (gases @STP)</li>
+          <li><b>Percent Yield:</b> <code>actual/theoretical × 100</code></li>
+          <li><b>Limiting Reactant:</b> smallest product amount (after conversion)</li>
+          <li><b>Empirical/Molecular Formula:</b> lowest ratio (empirical); actual (molecular)</li>
+        </ul>
+        <details><summary>Sample: 10g H₂ + 80g O₂ → H₂O. What's limiting?</summary>
+          <div>O₂ limiting; max H₂O = 80g/32 = 2.5 mol O₂ × 2 = 5 mol H₂O × 18 = 90g H₂O.</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Equilibrium & Kinetics -->
+    <div class="chapter" id="equilibrium">
+      <h2>Equilibrium & Kinetics</h2>
+      <button class="collapsible">Concepts & Examples</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Chemical Kinetics:</b> speed of reaction (rate)</li>
+          <li><b>Collision Theory:</b> particles must collide with right orientation and energy</li>
+          <li><b>Activation Energy (Ea):</b> energy barrier</li>
+          <li><b>Catalysts:</b> lower Ea, speed up reaction (not consumed)</li>
+          <li><b>Equilibrium:</b> rates forward = reverse, concentrations constant</li>
+          <li><b>Keq = [products]/[reactants]:</b> ignore pure solids/liquids</li>
+          <li><b>Ksp:</b> solubility product, higher Ksp = more soluble</li>
+          <li><b>Le Chatelier’s Principle:</b> system responds to minimize stress (concentration, T, P)</li>
+        </ul>
+        <details><summary>Example: What happens to equilibrium if [H₂] increases in N₂ + 3H₂ ⇌ 2NH₃?</summary>
+          <div>Shifts right (more NH₃).</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Acids, Bases & pH -->
+    <div class="chapter" id="acids">
+      <h2>Acids, Bases & pH</h2>
+      <button class="collapsible">Theory, Math & Sample Q's</button>
+      <div class="chapter-content">
+        <ul>
+          <li><b>Acids:</b> donate H⁺; <b>Bases:</b> accept H⁺</li>
+          <li><b>Strong/weak:</b> extent of ionization</li>
+          <li><b>pH:</b> <code>-log[H⁺]</code>; <b>pOH:</b> <code>-log[OH⁻]</code></li>
+          <li><b>Kw:</b> <code>[H⁺][OH⁻]=1×10⁻¹⁴</code> at 25°C</li>
+          <li><b>Titration:</b> MaVa = MbVb (for strong acid/base)</li>
+        </ul>
+        <details><summary>Sample: What is pH of 0.01 M HCl?</summary>
+          <div>pH = -log(0.01) = 2</div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Comprehensive Review -->
+    <div class="chapter" id="review">
+      <h2>Comprehensive Review & Practice</h2>
+      <button class="collapsible">Test Yourself (Q's from Throughout the Year!)</button>
+      <div class="chapter-content">
+        <ol>
+          <li>What is the empirical formula of a compound with 52.2% C, 13.0% H, 34.8% O?</li>
+          <li>How much 6M HCl is needed to prepare 250 mL of 1M HCl?</li>
+          <li>Why do ionic compounds conduct electricity when dissolved, but not as solids?</li>
+          <li>Explain the difference between a physical and a chemical change.</li>
+          <li>What does Le Chatelier’s Principle predict will happen if pressure is increased in N₂ + 3H₂ ⇌ 2NH₃?</li>
+        </ol>
+        <p>Check the rest of the guide or your textbook/notes for solutions!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Collapsible sections
+  const coll = document.querySelectorAll(".collapsible");
+  coll.forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight) content.style.maxHeight = null;
+      else content.style.maxHeight = content.scrollHeight + "px";
+    });
+  });
+  // Search/filter function
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const searchVal = this.value.toLowerCase();
+    document.querySelectorAll('.chapter').forEach(chap => {
+      if (chap.innerText.toLowerCase().includes(searchVal)) chap.style.display = "";
+      else chap.style.display = "none";
+    });
+  });
+</script>
+</body>
+</html>
