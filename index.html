@@ -35,23 +35,165 @@
 <body>
 <div class="main-container">
   <nav>
-    <h2>Chemistry Chapters</h2>
-    <ul>
-      <li><a href="#matter">Matter & Measurement</a></li>
-      <li><a href="#atoms">Atoms & The Periodic Table</a></li>
-      <li><a href="#bonding">Bonding & Structure</a></li>
-      <li><a href="#gases">Gases & Gas Laws</a></li>
-      <li><a href="#solutions">Solutions & Molarity</a></li>
-      <li><a href="#stoich">Stoichiometry</a></li>
-      <li><a href="#equilibrium">Equilibrium & Kinetics</a></li>
-      <li><a href="#acids">Acids, Bases & pH</a></li>
-      <li><a href="#review">Comprehensive Review</a></li>
-    </ul>
-  </nav>
+  <h2>Chemistry Final Guide</h2>
+  <ul>
+    <li><a href="#nomenclature">Nomenclature & Polyatomic Ions</a></li>
+    <li><a href="#matter">Matter & Measurement</a></li>
+    <li><a href="#atoms">Atoms & The Periodic Table</a></li>
+    <li><a href="#bonding">Bonding & Structure</a></li>
+    <li><a href="#gases">Gases & Gas Laws</a></li>
+    <li><a href="#solutions">Solutions & Concentrations</a></li>
+    <li><a href="#stoich">Stoichiometry</a></li>
+    <li><a href="#equilibrium">Equilibrium & Kinetics</a></li>
+    <li><a href="#acids">Acids, Bases & pH</a></li>
+    <li><a href="#review">Comprehensive Review</a></li>
+    <li><a href="#glossary">Glossary & Essential Terms</a></li>
+  </ul>
+</nav>
   <div class="content">
     <div class="searchbox">
       <input type="text" id="searchInput" placeholder="Type to filter topics or formulas...">
     </div>
+
+    <!-- Nomenclature & Polyatomic Ions -->
+<div class="chapter" id="nomenclature">
+  <h2>Nomenclature & Polyatomic Ions</h2>
+  
+  <!-- Naming Overview -->
+  <button class="collapsible">Quick Overview</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Chemical Nomenclature:</b> The system for naming chemical compounds.</li>
+      <li><b>Three main classes:</b> Ionic compounds, molecular (covalent) compounds, acids.</li>
+      <li>Correct names reveal what elements/ions are present and how many.</li>
+    </ul>
+  </div>
+  
+  <!-- Ionic Compounds -->
+  <button class="collapsible">Ionic Compounds</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Metal + Nonmetal</b> (or polyatomic): Name the cation (positive, metal) first, then the anion (negative, nonmetal or polyatomic).</li>
+      <li>Monatomic anions end in <code>-ide</code> (e.g., Cl<sup>-</sup> = chloride).</li>
+      <li>For metals with more than one possible charge (usually transition metals), indicate the charge with Roman numerals: <code>FeCl<sub>2</sub></code> is iron(II) chloride.</li>
+      <li>Example: Na<sub>2</sub>SO<sub>4</sub> is sodium sulfate; Cu(NO<sub>3</sub>)<sub>2</sub> is copper(II) nitrate.</li>
+    </ul>
+  </div>
+  
+  <!-- Molecular Compounds -->
+  <button class="collapsible">Molecular (Covalent) Compounds</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Nonmetal + Nonmetal:</b> Use prefixes to indicate number of atoms (see table below). Second element ends in <code>-ide</code>.</li>
+      <li>Omit “mono-” on the first element.</li>
+      <li>Example: CO<sub>2</sub> = carbon dioxide; N<sub>2</sub>O<sub>5</sub> = dinitrogen pentoxide.</li>
+    </ul>
+    <table border="1" cellpadding="4" style="margin-top:10px; background:#f3f4f6;">
+      <tr><th>Prefix</th><th>Number</th></tr>
+      <tr><td>Mono-</td><td>1</td></tr>
+      <tr><td>Di-</td><td>2</td></tr>
+      <tr><td>Tri-</td><td>3</td></tr>
+      <tr><td>Tetra-</td><td>4</td></tr>
+      <tr><td>Penta-</td><td>5</td></tr>
+      <tr><td>Hexa-</td><td>6</td></tr>
+      <tr><td>Hepta-</td><td>7</td></tr>
+      <tr><td>Octa-</td><td>8</td></tr>
+      <tr><td>Nona-</td><td>9</td></tr>
+      <tr><td>Deca-</td><td>10</td></tr>
+    </table>
+  </div>
+  
+  <!-- Acids -->
+  <button class="collapsible">Naming Acids</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Binary Acids:</b> Contain H + nonmetal. Name: <code>hydro-</code> + root + <code>-ic acid</code>. <br>Example: HCl (aq) = hydrochloric acid.</li>
+      <li><b>Oxyacids:</b> Contain H + polyatomic ion (usually containing oxygen). <br>
+        - If polyatomic ends in <code>-ate</code>: root + <code>-ic acid</code>. <br>
+        - If ends in <code>-ite</code>: root + <code>-ous acid</code>. <br>
+        Example: H<sub>2</sub>SO<sub>4</sub> (sulfate → sulfuric acid), H<sub>2</sub>SO<sub>3</sub> (sulfite → sulfurous acid).
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Polyatomic Ions Table -->
+  <button class="collapsible">Common Polyatomic Ions</button>
+  <div class="chapter-content">
+    <table border="1" cellpadding="5" style="background:#f3f4f6; margin-bottom:10px;">
+      <tr><th>Name</th><th>Formula</th><th>Charge</th></tr>
+      <tr><td>Ammonium</td><td>NH<sub>4</sub><sup>+</sup></td><td>+1</td></tr>
+      <tr><td>Nitrate</td><td>NO<sub>3</sub><sup>-</sup></td><td>-1</td></tr>
+      <tr><td>Hydroxide</td><td>OH<sup>-</sup></td><td>-1</td></tr>
+      <tr><td>Sulfate</td><td>SO<sub>4</sub><sup>2-</sup></td><td>-2</td></tr>
+      <tr><td>Carbonate</td><td>CO<sub>3</sub><sup>2-</sup></td><td>-2</td></tr>
+      <tr><td>Phosphate</td><td>PO<sub>4</sub><sup>3-</sup></td><td>-3</td></tr>
+      <tr><td>Acetate</td><td>C<sub>2</sub>H<sub>3</sub>O<sub>2</sub><sup>-</sup></td><td>-1</td></tr>
+      <tr><td>Chlorate</td><td>ClO<sub>3</sub><sup>-</sup></td><td>-1</td></tr>
+      <tr><td>Permanganate</td><td>MnO<sub>4</sub><sup>-</sup></td><td>-1</td></tr>
+      <!-- Add more as needed -->
+    </table>
+    <p><b>Tips:</b> <code>-ate</code> = more O; <code>-ite</code> = less O; <code>per-</code>/<code>hypo-</code> = most/least O. Memorize these for fast recognition!</p>
+  </div>
+  
+  <!-- Practice Problems -->
+  <button class="collapsible">Practice Problems</button>
+  <div class="chapter-content">
+    <ol>
+      <li>Name the following compounds:
+        <ul>
+          <li>Na<sub>3</sub>PO<sub>4</sub></li>
+          <li>PCl<sub>5</sub></li>
+          <li>HNO<sub>3</sub> (aq)</li>
+          <li>Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub></li>
+        </ul>
+      </li>
+      <li>Write formulas for:
+        <ul>
+          <li>Potassium nitrate</li>
+          <li>Calcium carbonate</li>
+          <li>Hydrosulfuric acid</li>
+          <li>Dinitrogen tetroxide</li>
+        </ul>
+      </li>
+    </ol>
+    <details><summary>Answers</summary>
+      <ul>
+        <li>Na<sub>3</sub>PO<sub>4</sub>: sodium phosphate</li>
+        <li>PCl<sub>5</sub>: phosphorus pentachloride</li>
+        <li>HNO<sub>3</sub> (aq): nitric acid</li>
+        <li>Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>: iron(III) sulfate</li>
+        <li>Potassium nitrate: KNO<sub>3</sub></li>
+        <li>Calcium carbonate: CaCO<sub>3</sub></li>
+        <li>Hydrosulfuric acid: H<sub>2</sub>S</li>
+        <li>Dinitrogen tetroxide: N<sub>2</sub>O<sub>4</sub></li>
+      </ul>
+    </details>
+  </div>
+  
+  <!-- Glossary for This Section -->
+  <button class="collapsible">Quick Glossary</button>
+  <div class="chapter-content">
+    <ul>
+      <li><b>Cation:</b> Positively charged ion (usually metal)</li>
+      <li><b>Anion:</b> Negatively charged ion (usually nonmetal/polyatomic)</li>
+      <li><b>Polyatomic Ion:</b> Ion made of more than one atom (acts as a single unit)</li>
+      <li><b>Oxyanion:</b> Polyatomic ion containing oxygen (e.g., nitrate, sulfate)</li>
+      <li><b>Acid:</b> Compound that donates H<sup>+</sup> in water</li>
+      <li><b>Binary:</b> Compound with two elements</li>
+    </ul>
+  </div>
+  
+  <!-- Study Tips -->
+  <button class="collapsible">Study Tips & Tricks</button>
+  <div class="chapter-content">
+    <ul>
+      <li>Flashcards help with polyatomic ions and their charges!</li>
+      <li>Practice naming from formulas and vice versa—both directions show up on exams.</li>
+      <li>Pay attention to transition metals with multiple charges.</li>
+      <li>Get used to common acid and base names—they pop up everywhere!</li>
+    </ul>
+  </div>
+</div>
 
     <!-- Matter & Measurement -->
    <div class="chapter" id="matter">
